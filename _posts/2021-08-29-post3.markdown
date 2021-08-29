@@ -8,6 +8,7 @@ category: programmers
 > 완료
 
 1차 제출 실패
+
 ```python
 def solution(bridge_length, weight, truck_weights):
     #빈 다리 리스트 생성
@@ -58,7 +59,9 @@ def solution(bridge_length, weight, truck_weights):
             answer+=1
     return answer
 ```
+
 2차 제출 실패
+
 ```python
 def solution(bridge_length, weight, truck_weights):
     #빈 다리 리스트 생성
