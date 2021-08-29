@@ -1,0 +1,13 @@
+---
+layout: post
+title: programmers
+date: 2021-08-29 19:20:23 +0900
+category: programmers
+---
+# 주식찾기
+> 아직 도중 효율성 문제해결해야 함
+
+This is code
+```python
+print('git hub')
+```
