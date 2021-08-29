@@ -7,7 +7,7 @@ category: programmers
 # 기능개발
 > 완료
 
-첫번째 시도
+첫번째 시도 실패
 ```python
 def solution(progresses, speeds):    
     answer=[]
@@ -56,9 +56,8 @@ def solution(progresses, speeds):
         return answer
 ```
 
-두번째 시도
+두번째 시도 성공
 ```python
-#성공
 def solution(progresses, speeds): 
     import math   
     answer=[]
