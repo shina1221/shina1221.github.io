@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 큐/스택
+title: week1-큐/스택
 date: 2021-08-23 19:20:23 +0900
 category: programmers
 ---
