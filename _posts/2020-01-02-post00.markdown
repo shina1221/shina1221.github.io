@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 모의고사
-date: 2021-08-29 19:20:23 +0900
+title: week2-모의고사
+date: 2021-08-31 19:20:23 +0900
 category: programmers
 ---
 # 모의고사
