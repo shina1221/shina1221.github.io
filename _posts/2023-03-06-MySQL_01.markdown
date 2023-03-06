@@ -1,0 +1,55 @@
+---
+layout: post
+title: SQL 코딩 컨벤션 
+date: 2023-03-06 19:20:23 +0900
+category: HackerRank
+---
+
+# 데이터리안 
+![데이터리안](https://datarian.io/blog/good-sql-code)  
+
+1) 예약어는 대문자로  
+예약어는 대문자로 첫 번째는 SELECT, FROM, GROUP BY, HAVING, AS, AND 와 같은 SQL 예약어들은 대문자로  
+
+SELECT day, total_bill  
+FROM tips;  
+
+2,3) 행갈이는 자주  
+SELECT day,    
+       time,    
+       SUM(total_bill)    
+FROM tips  
+WHERE sex =='Female'  
+AND smoker ='Yes'   
+GROUP BY day,
+         time      
+
+
+4) 주석을 쓸 것  
+1. 서브쿼리 단위로 의미를 적음     
+2. 컬럼 이름만 보고 해석에 오해가 있을 수 있거나, 추가 설명이 필요한 경우에 적어줄 것  
+3. 조건이 왜 필요한지, 어떻게 동작하는지 같은 디테일을 적어주면 추후에 도움됨    
+#MySQL에서의 주석은 --로 처리  
+
+SELECT AVG(sales) avg_sales  
+FROM (  
+  -- 요일별 매출액 합계 계산  
+  SELECT day -- 일별 X 요일별 O  
+       , SUM(total_bill) sales  
+  FROM tips  
+  WHERE sex = 'Female' -- 결제자의 성별이 여성인 경우  
+  GROUP BY day  
+) daily_sales    
+
+5) Alias(별칭) 잘 쓰기  
+![평생 필요한 데이터 분석 - MySQL과 주식 데이터로 재밌게](https://wikidocs.net/131380)  
+
+1. 컬럼에 별칭 사용. 단 WHERE 절에서 컬럼명의 별칭 사용 불가   
+   별칭에서의 AS는 생략가능  
+
+- SELECT 컬럼이름 AS 별칭  
+- SELECT 함수명 AS 별칭   
+- SELECT (서브쿼리) AS 별칭   
+
+SELECT a1  
+FROM stage (AS) st;  
