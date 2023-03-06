@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SQL 코딩 컨벤션 
-date: 2023-03-06 19:20:23 +0900
+date: 2023-03-06 19:20:23 
 category: HackerRank
 ---
 
