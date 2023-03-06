@@ -5,10 +5,5 @@ date: 2021-08-29 19:20:23 +0900
 category: sample
 ---
 # greeting
-> 처음이라 미숙하지만 시작합니다.
-
-자세한 것은 차차 수정해나갈 예정.
+> 모르거나 헷갈리는 것을 기록하는 것을 목적으로 하는 블로그
 posted by 신나정
-```python
-print('hello gibhub.io!')
-```
