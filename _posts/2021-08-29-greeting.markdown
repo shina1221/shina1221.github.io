@@ -2,7 +2,7 @@
 layout: post
 title: 인삿말
 date: 2021-08-29 19:20:23 +0900
-category: sample
+category: greeting
 ---
 # greeting
 > 모르거나 헷갈리는 것을 기록하는 것을 목적으로 하는 블로그
