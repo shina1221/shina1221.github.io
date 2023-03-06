@@ -10,8 +10,3 @@ _config.yml 파일에 future: true 넣어서 해결.
 
 [참고 블로그](https://devyuseon.github.io/github%20blog/githubblog-post-not-shown/)  
 
-
-This is code
-```python
-print('git hub')
-```
