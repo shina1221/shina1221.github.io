@@ -10,7 +10,7 @@ category: HackerRank
 
 1) 예약어는 대문자로  
 예약어는 대문자로 첫 번째는 SELECT, FROM, GROUP BY, HAVING, AS, AND 와 같은 SQL 예약어들은 대문자로  
-
+```MySQL
 SELECT day, total_bill  
 FROM tips;  
 
@@ -23,7 +23,7 @@ WHERE sex =='Female'
 AND smoker ='Yes'   
 GROUP BY day,
          time      
-
+```
 
 4) 주석을 쓸 것  
 1. 서브쿼리 단위로 의미를 적음     
