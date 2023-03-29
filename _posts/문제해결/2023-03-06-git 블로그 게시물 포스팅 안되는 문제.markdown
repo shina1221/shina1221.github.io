@@ -1,0 +1,12 @@
+---
+layout: post
+title: git 블로그 게시물 포스팅 안되는 문제
+date: 2023-03-06 19:20:23 +0900
+category: problem_solving
+---
+> git에서 push한 게시물이 블로그에 반영되어있지 않았음 
+
+_config.yml 파일에 future: true 넣어서 해결.  
+
+[참고 블로그](https://devyuseon.github.io/github%20blog/githubblog-post-not-shown/)  
+
