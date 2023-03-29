@@ -5,10 +5,10 @@ date: 2023-03-29 19:20:23 +0900
 category: problem_solving
 ---
 > 깃에 올려놓은 이미지를 깃 블로그에 넣기위해선 다음의 마크다운 문법을 따라야함.
-
+```
 ![GitHub Logo](/images/logo.png)
 Format: ![Alt Text](url)
-
+```
 정확인 이미지 경로를 얻기 위해선
 issues탭에서 submit new issue를 열어 git에 올려둔 이미지를 끌어놓으면 마크다운 문법이 보임. 
 
