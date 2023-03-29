@@ -12,6 +12,6 @@ Format: ![Alt Text](url)
 정확인 이미지 경로를 얻기 위해선
 issues탭에서 submit new issue를 열어 git에 올려둔 이미지를 끌어놓으면 마크다운 문법이 보임. 
 
-#참고
-![Hyeon's DevLog](https://hyeonjiwon.github.io/blog/markdown_img/)  
+#참고  
+[Hyeon's DevLog](https://hyeonjiwon.github.io/blog/markdown_img/)  
 
