@@ -62,7 +62,7 @@ GROUP BY
   --substring(stamp, 1, 10)
 ORDER BY dt;
 ```  
-![14-1 결과]()  
+![14-1 결과](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EC%9D%B4%EB%AF%B8%EC%A7%80/14-1.PNG)   
 
 2)페이지 별 쿠키/ 방문 횟수/ 페이지 뷰 집계하기  
 URL을 집계하면 각 페이지의 방문 횟수, 페이지 뷰 등을 집계할 수 있음.  
@@ -81,7 +81,7 @@ GROUP BY
   url
 ;
 ```  
-![14-2 결과]()  
+![14-2 결과](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EC%9D%B4%EB%AF%B8%EC%A7%80/14-2.PNG)  
 
 ```
 # 경로별로 집계하기
@@ -118,7 +118,7 @@ GROUP BY
   url_path
 ;
 ```
-![14-3  결과]()  !!!!!!14-2_1 결과와 비교해서 해석해볼 것  
+![14-3  결과]![](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EC%9D%B4%EB%AF%B8%EC%A7%80/14-3.PNG)  !!!!!!14-2_1 결과와 비교해서 해석해볼 것  
 
 ```
 # URL에 의미를 부여해서 집계하기 
@@ -131,7 +131,6 @@ GROUP BY
 
 split_part(대상컬럼, '구분자', n)
 대상컬럼을 구분자 기준으로 잘라서 n번째 문자 반환 
-
 
 */
 WITH
@@ -174,7 +173,7 @@ GROUP BY page_name
 ORDER BY page_name
 ;
 ```  
-![14-4 결과]()  
+![14-4 결과](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EC%9D%B4%EB%AF%B8%EC%A7%80/14-4.PNG) 
 
 유입원별로 방문횟수 또는 CVR 집계하기  
 
@@ -207,7 +206,7 @@ URL 생성 도구 'Campaign URL Builder를 사용해 웹사이트의 URL 또는
 Campaign source 등 필요한 매개변수를 입력하면 URL을 생성해줌.  
 
 ex)www.~~~.com?utm_source=google&utm_medium=cp&utm_compaign=spring_sale  
-![구글 애널리틱스 설명]()  
+![구글 애널리틱스 설명](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EC%9D%B4%EB%AF%B8%EC%A7%80/구글 애널리틱스 설명_1.PNG)  
 
 URL 매개변수를 사용하면 다양한 유입계측 가능.  
 검색엔진, 개인 블로그, 트위터처럼 광고 담당자가 조작할 수 없는 영역은 URL 매개변수 활용 불가능. 이 때에는 레퍼러를 사용해야함.  
@@ -215,7 +214,7 @@ URL 매개변수를 사용하면 다양한 유입계측 가능.
 
 해당 도메인이 자신의 사이트가 아니고 레퍼러(직전 페이지url)가 있는 경우  
 두가지를 만족할 때 다음의 로직으로 유입원별 방문 횟수 집계  
-![구글 애널리틱스 설명]()  
+![유입원 판단 로직]((https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EC%9D%B4%EB%AF%B8%EC%A7%80/유입원 판단 로직.PNG))  
 
 ```
 # 유입원별로 방문 횟수를 집계하는 쿼리
@@ -254,7 +253,7 @@ FROM access_log_with_via_info
 GROUP BY via
 ORDER BY access_count DESC;
 ```
-![14-5 결과]()  
+![14-5 결과](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EC%9D%B4%EB%AF%B8%EC%A7%80/14-5.PNG)
 
 유입원별로 CVR 집계하기   
 WITH 구문의 access_log_with_purchase_amount 테이블을 수정하면 다양하게 사용가능  
@@ -325,7 +324,7 @@ GROUP BY via
 ORDER BY cvr desc
 ;
 ```  
-![14-6 결과]()   
+![14-6 결과](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EC%9D%B4%EB%AF%B8%EC%A7%80/14-6.PNG)  
 
 접근 요일, 시간대 파악하기  
 
@@ -338,7 +337,7 @@ ORDER BY cvr desc
 2.접근한 시간을 해당 단위로 집계하고, 요일과 함께 방문자 수를 집계  
 
 요일 번호 정의는 미들웨어에 따라 다르니 주의  
-![요일 번호 정의]()  
+![요일 번호 정의](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EC%9D%B4%EB%AF%B8%EC%A7%80/요일 번호 정의.PNG)  
 
 ```
 # 요일/시간대별 방문자 수를 집계하는 쿼리  
@@ -410,7 +409,7 @@ ORDER BY
 ;
 */
 ```  
-![14-7 결과]()  
+![14-7 결과](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EC%9D%B4%EB%AF%B8%EC%A7%80/14-7.PNG)  
 
 사용자 방문이 많은 시간대에 캠페인을 실시하는 것이 안정적  
 사용자 방문이 적은 시간대에 전자상거래 사이트의 경우 타임세일,  
