@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 00.데이터 분석을 위한 SQL 레시피_2강_04
+title: 00.데이터 분석을 위한 SQL 레시피_6강
 date: 2023-05-01 19:20:23 
-category: 도서
+category: book
 ---
 
 # 데이터  
