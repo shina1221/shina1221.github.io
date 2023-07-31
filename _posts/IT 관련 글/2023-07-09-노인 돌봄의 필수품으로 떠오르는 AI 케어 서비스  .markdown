@@ -2,7 +2,7 @@
 layout: post
 title: 노인 돌봄의 필수품으로 떠오르는 AI 케어 서비스   
 date: 2023-07-09 19:22:23 +0900
-category: IT 관련 글
+category: IT Information
 ---
 <br>
 사회가 빠르게 고령화 되며 생긴 돌봄 공백을 메우고자 IT 기술을 활용하고 있다.  
