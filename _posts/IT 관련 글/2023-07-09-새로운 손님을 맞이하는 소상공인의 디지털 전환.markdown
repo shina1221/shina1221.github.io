@@ -2,7 +2,7 @@
 layout: post
 title: 새로운 손님을 맞이하는 소상공인의 디지털 전환  
 date: 2023-07-09 19:21:23 +0900
-category: IT 관련 글
+category: IT Information
 ---
 <br> 
 kt에서 10개 나라의 언어, 더치페이를 제공하는 서비스를 제공하는 하이오더 서비스를 제공.  
