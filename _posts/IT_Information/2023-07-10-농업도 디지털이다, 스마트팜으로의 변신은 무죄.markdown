@@ -2,7 +2,7 @@
 layout: post
 title: 농업도 디지털이다, 스마트팜으로의 변신은 무죄 
 date: 2023-07-10 19:21:23 +0900
-category: IT Information
+category: IT_Information
 ---
 <br>
 스마트팜: 농장에 AI, 빅데이터, 클라우드, IoT 등 ICT 기술을 접목해 원격 및 자동으로 최적의 생육환경을 제어할 수 있는 농장이다. 보통 공간 효율성을 높이기 위해 수직으로 식물들을 배치한다.
