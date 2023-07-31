@@ -2,7 +2,7 @@
 layout: post
 title: 왜 빅테크 기업들은 메타버스가 아니나 앰비언트를 주목하는가?
 date: 2023-07-08 19:21:23 +0900
-category: IT 관련 글
+category: IT Information
 ---
  <br>
 앰비언트: 주변의, 주위의, 나를 둘러싼 같은 의미를 지님.  
