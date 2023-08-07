@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 네트워크02
+title: 네트워크01
 date: 2023-08-02 19:20:23 +0900
 category: CS
 ---
