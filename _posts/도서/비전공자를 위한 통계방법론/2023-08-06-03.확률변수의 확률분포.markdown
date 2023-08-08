@@ -51,9 +51,7 @@ ex) 지정된 매장에서 임의의 두 고객 방문시점 사이의 시간차
 변수의 가중평균을 구할 땐 개별 개체값에 딸린 도수(frequency)를 가중치로 사용하지만  
 확률변수의 기대값을 구할 땐 딸린 확률(probalility)를 가중치로 사용한다.  
 
-$$   
-E(X_{i})=  \sum x_{i}* P_{i} 
-$$     
+$$ E(X_{i})=  \sum x_{i}* P_{i} $$     
 
 ![예시](https://wikimedia.org/api/rest_v1/media/math/render/svg/68512c225071812574cdcd829b5c0175891d3d1a)  
 
