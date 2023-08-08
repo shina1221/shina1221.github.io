@@ -3,6 +3,7 @@ layout: post
 title: 확률변수의 확률분포
 date: 2023-08-06 19:20:23 +0900
 category: 도서
+use_math: true  
 ---
 >확률변수의 확률분포  
 확률분포: 어떤 확률변수가 취할 수 있는 모든 가능한 값들과 그것에 대응하는 확률을 표나 그래프로 표시한 것이다.  
@@ -50,11 +51,11 @@ ex) 지정된 매장에서 임의의 두 고객 방문시점 사이의 시간차
 변수의 가중평균을 구할 땐 개별 개체값에 딸린 도수(frequency)를 가중치로 사용하지만  
 확률변수의 기대값을 구할 땐 딸린 확률(probalility)를 가중치로 사용한다.  
 
-$$ E(X_{i})=  \sum x_{i}* P_{i} $$   
-
+$$   
+E(X_{i})=  \sum x_{i}* P_{i} 
+$$     
 
 ![예시](https://wikimedia.org/api/rest_v1/media/math/render/svg/68512c225071812574cdcd829b5c0175891d3d1a)  
-
 
 
 참고 출처: https://namu.wiki/w/%EA%B8%B0%EB%8C%93%EA%B0%92    
