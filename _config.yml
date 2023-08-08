@@ -30,10 +30,10 @@ url: "https://shina1221.github.io/" # the base hostname & protocol for your site
 github_username: shina1221
 highlighter: rouge
 # Conversion 관련 추가한 내용 여기부터
-markdown: kramdown
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+# markdown: kramdown
+# lsi: false
+# excerpt_separator: "\n\n"
+# incremental: false
 # Conversion 관련 추가한 내용 여기까지
 
 svg:
