@@ -29,12 +29,6 @@ baseurl: "https://shina1221.github.io/" # the subpath of your site, e.g. /blog
 url: "https://shina1221.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: shina1221
 highlighter: rouge
-# Conversion 관련 추가한 내용 여기부터
-# markdown: kramdown
-# lsi: false
-# excerpt_separator: "\n\n"
-# incremental: false
-# Conversion 관련 추가한 내용 여기까지
 
 svg:
   optimize: true
