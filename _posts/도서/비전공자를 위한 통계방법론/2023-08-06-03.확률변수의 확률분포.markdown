@@ -55,8 +55,6 @@ $$
 E(X_{i})=  \sum x_{i}* P_{i} 
 $$     
 
-확률변수 X에 상수 
-
 ![예시](https://wikimedia.org/api/rest_v1/media/math/render/svg/68512c225071812574cdcd829b5c0175891d3d1a)  
 
 참고 출처: https://namu.wiki/w/%EA%B8%B0%EB%8C%93%EA%B0%92    
