@@ -3,6 +3,7 @@ layout: post
 title: 확률변수의 확률분포
 date: 2023-08-06 19:20:23 +0900
 category: stastics
+use_math: true
 ---
 # 비전공자를 위한 통계방법론    
 <br>
