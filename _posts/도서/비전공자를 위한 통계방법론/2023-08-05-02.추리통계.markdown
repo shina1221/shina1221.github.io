@@ -2,7 +2,7 @@
 layout: post
 title: 추리통계
 date: 2023-08-05 19:20:23 +0900
-category: 도서
+category: Books
 ---
 >표본의 대표성  
 추리통계: 표본에서 얻은 결과를 토대로 모집단의 특성을 추정하는 것이다.   
