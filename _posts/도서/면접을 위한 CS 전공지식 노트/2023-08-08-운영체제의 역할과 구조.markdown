@@ -55,8 +55,6 @@ ex) 유저 프로그램이 카메라를 이용하려 할 때 시스템 콜을 �
 modebit을 1에서 0으로 바꾸며 커널모드로 변경한 뒤 요청하는 I/O 작업을 수행한다.  
 그 이후 modebit을 0에서 1로 바꿔 유저모드로 변경하고 이후 로직을 수행한다.   
 
-
-
 참고 출처:  
 http://www.ktword.co.kr/test/view/view.php?m_temp1=3027  
 https://learn.microsoft.com/ko-kr/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode  
