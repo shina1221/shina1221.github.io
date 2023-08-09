@@ -1,0 +1,11 @@
+---
+layout: post
+title: 가설검증의 기본논법
+date: 2023-08-10 19:21:23 +0900
+category: stastics
+use_math: true
+---
+# 비전공자를 위한 통계방법론    
+<br>
+
+
