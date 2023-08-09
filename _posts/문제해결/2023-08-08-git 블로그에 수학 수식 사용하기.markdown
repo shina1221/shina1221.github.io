@@ -1,0 +1,14 @@
+---
+layout: post
+title: git 블로그에 수학 수식 사용하기
+date: 2023-08-08 19:20:23 +0900
+category: problem_solving
+---
+> 기존에 $$수식$$이렇게 해봤으나 수식이 반영되지 않는 문제 발생.   
+
+1. 아래의 블로그를 참고해 수식을 사용할 수 있게 옵션 설정  
+2. https://editor.codecogs.com/에서 맨 하단에 있는 링크로 이미지 수식 첨부   
+ex)https://latex.codecogs.com/png.image?\inline&space;\dpi{100}E(X_{i})=\sum_{}^{}X_{i}*P_{i}  
+
+[참고 블로그](https://m.blog.naver.com/PostView.naver?blogId=prt1004dms&logNo=221525385428&proxyReferer=)  
+
