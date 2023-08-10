@@ -2,7 +2,7 @@
 layout: post
 title: 추리통계
 date: 2023-08-05 19:20:23 +0900
-category: stastics
+category: statistics 
 ---
 # 비전공자를 위한 통계방법론    
 <br>
