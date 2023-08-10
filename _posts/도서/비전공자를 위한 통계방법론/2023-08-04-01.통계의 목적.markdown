@@ -2,7 +2,7 @@
 layout: post
 title: 통계의 목적
 date: 2023-08-04 19:20:23 +0900
-category: stastics
+category: statistics 
 use_math: true
 ---
 # 비전공자를 위한 통계방법론    
