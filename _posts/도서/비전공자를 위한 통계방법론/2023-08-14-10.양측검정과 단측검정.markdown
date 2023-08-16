@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 유의수준: 양측검증과 단측검증  
+title: 양측검증과 단측검증  
 date: 2023-08-14 19:21:23 +0900
 category: statistics 
 use_math: true
