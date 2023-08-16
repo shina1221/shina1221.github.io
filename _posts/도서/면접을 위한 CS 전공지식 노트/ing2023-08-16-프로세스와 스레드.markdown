@@ -1,0 +1,14 @@
+---
+layout: post
+title: 프로세스와 스레드  
+date: 2023-08-16 19:20:23 +0900
+category: CS
+---
+# 면접을 위한 CS 전공지식 노트  
+> 프로세스와 스레드    
+
+3.3.5까지
+  
+참고 출처:  
+https://resilient-923.tistory.com/397  
+
