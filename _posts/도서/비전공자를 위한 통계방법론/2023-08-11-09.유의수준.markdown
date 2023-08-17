@@ -40,4 +40,4 @@ use_math: true
 불구하고 통계적으로는 연구가설을 지지하는 결과를 얻기 어렵다. **연구자가 제 1종 오류 허용확률을 일정 $\alpha$ 수준에서**  
 **통제하면서 동시에 통계적 검정력을 높일 수 있는 현실적 방법은 표본크기를 키우는 것이다.**  
   
-![정리](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EB%8F%84%EC%84%9C/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%ED%86%B5%EA%B3%84%EB%B0%A9%EB%B2%95%EB%A1%A0/img/%EA%B0%80%EC%84%A4%EA%B2%80%EC%A6%9D%20%EC%98%A4%EB%A5%98.jpg)  
+![정리](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EB%8F%84%EC%84%9C/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%ED%86%B5%EA%B3%84%EB%B0%A9%EB%B2%95%EB%A1%A0/img/%EA%B0%80%EC%84%A4%EA%B2%80%EC%A6%9D_%EC%98%A4%EB%A5%98.jpg)
