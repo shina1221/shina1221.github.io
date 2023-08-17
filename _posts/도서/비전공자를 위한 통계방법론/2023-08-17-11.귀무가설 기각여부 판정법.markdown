@@ -24,14 +24,14 @@ use_math: true
 이는 양쪽 꼬리부분의 면적을 의미한다.  
 **즉 t분포상에서 연구자가 표본에서 얻은 검증통계치(표본통계치를 표준화한 값)보다 같거나 큰 값이**  
 **나올 확률에 2배를 곱한 값이 양측검증에 부합한 유의확률(p-value)가 된다.**  
-![](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EB%8F%84%EC%84%9C/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%ED%86%B5%EA%B3%84%EB%B0%A9%EB%B2%95%EB%A1%A0/img/%EC%96%91%EC%B8%A1%EA%B2%80%EC%A0%95%20p-value.jpg)  
+![two](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EB%8F%84%EC%84%9C/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%ED%86%B5%EA%B3%84%EB%B0%A9%EB%B2%95%EB%A1%A0/img/%EC%96%91%EC%B8%A1%EA%B2%80%EC%A0%95%20p-value.jpg)  
 
 단측검증의 경우 귀무가설의 기각영역이 표본분포의 한쪽에 있기 때문에 연구자가 표본에서 얻은  
 검증통계치보다 해당되는 방향에서 더 극단적인 값을 가질 확률이 곧 가설검증 목적에 부합한  
 유의확률이 된다. 즉, 우측검증의 경우 p-value=$P(t\geq$검증통계치)가 되고  
 좌측검증의 경우 p-value=$P(t\leq$검증통계치)가 된다.  
   
-![](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EB%8F%84%EC%84%9C/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%ED%86%B5%EA%B3%84%EB%B0%A9%EB%B2%95%EB%A1%A0/img/%EB%8B%A8%EC%B8%A1%EA%B2%80%EC%A0%95%20p-value.jpg)  
+![one](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EB%8F%84%EC%84%9C/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%ED%86%B5%EA%B3%84%EB%B0%A9%EB%B2%95%EB%A1%A0/img/%EB%8B%A8%EC%B8%A1%EA%B2%80%EC%A0%95%20p-value.jpg)  
   
 *다만 t검증처럼 좌우대칭인 확률분포에서 유의확률을 계산할 때 통계패키지(SPSS)가 분석결과를 제공할 시  
 양측검증을 전제해 계산한 값을 제공하는 경우가 많다. 이럴 경우 유의확률 p값을 그대로 사용하지 말고  
