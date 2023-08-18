@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 행동데이터를 이해하는 방법
-date: 2023-08-16 19:20:23 +0900
+date: 2023-08-17 19:20:23 +0900
 category: DA
 use_math: true
 ---
