@@ -70,7 +70,7 @@ $-t_{\alpha/2, n_{1}+n_{2}-2}$보다 같거나 작은 값이면 귀무가설을 
 #기타) 표본 표준편차(S) 제곱하면 표본분산  
   
 표준오차는  
-$S_{\overline{x}_{1}-\overline{x}_{2}} = \sqrt{\frac{S_{p}^2}{n_{1}}+\frac{S_{p}^2}{n_{2}}}=S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}$   
+$$S_{\overline{x}_{1}-\overline{x}_{2}} = \sqrt{\frac{S_{p}^2}{n_{1}}+\frac{S_{p}^2}{n_{2}}}=S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}$$   
 
 $S_{\overline{x}_{1}-\overline{x}_{2}}=\sqrt{\frac{S^{2}_{p}}{n_{1}}}+\sqrt{\frac{S^{2}_{p}}{n_{2}}}=S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n{2}}}$  
   
