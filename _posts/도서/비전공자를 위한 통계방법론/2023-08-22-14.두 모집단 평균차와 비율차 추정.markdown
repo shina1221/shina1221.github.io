@@ -77,8 +77,6 @@ $S_{p}^{2} = \frac{(n_{1}-1)S_{1}^{2}+(n_{2}-1)S_{2}^{2}}{n_{1}+n_{2}-2}$
 소표본의 신뢰구간  
 **$(\overline{X}_{1}-\overline{X}_{2})-t_{\alpha/2, n_{1}+n_{2}-2}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\leq \mu_1-\mu_2 \leq (\overline{X}_{1}-\overline{X}_{2})+t_{\alpha/2, n_{1}+n_{2}-2}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}$**  
 
-
-
 참고 출처:  
 http://contents.kocw.or.kr/document/2012_1_11.pdf  
 http://contents.kocw.or.kr/KOCW/document/2015/chungnam/junkwanghee/10.pdf  
