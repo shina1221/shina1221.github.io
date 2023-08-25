@@ -70,13 +70,13 @@ $-t_{\alpha/2, n_{1}+n_{2}-2}$보다 같거나 작은 값이면 귀무가설을 
 #기타) 표본 표준편차(S) 제곱하면 표본분산  
 
 표준오차는  
-$S_{\overline{x}_{1} - \overline{x}_{2}}=\sqrt{\frac{S^{2}_{p}}{n_{1}}}+\sqrt{\frac{S^{2}_{p}}{n_{2}}}=S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}$  
+$S_{\overline{x}_{1}-\overline{x}_{2}}=\sqrt{\frac{S^{2}_{p}}{n_{1}}}+\sqrt{\frac{S^{2}_{p}}{n_{2}}}=S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}$  
   
 두 모집단의 통합분산  
 $S_{p}^{2} = \frac{(n_{1}-1)S_{1}^{2}+(n_{2}-1)S_{2}^{2}}{n_{1}+n_{2}-2}$  
   
 소표본의 신뢰구간  
-**$(\overline{X}_{1}-\overline{X}_{2})-t_{\alpha/2, n_{1}+n_{2}-2}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\leq \mu_1-\mu_2 \leq (\overline{X}_{1}-\overline{X}_{2})+t_{\alpha/2, n_{1}+n_{2}-2}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}$**  
+**$(\overline{X}_{1}-\overline{X}_{2})-t_{\alpha/2, n_{1}+n_{2}-2}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\leq \mu_1-\mu_2 \leq(\overline{X}_{1}-\overline{X}_{2})+t_{\alpha/2, n_{1}+n_{2}-2}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}$**  
   
 참고 출처:  
 http://contents.kocw.or.kr/document/2012_1_11.pdf  
