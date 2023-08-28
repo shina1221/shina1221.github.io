@@ -29,6 +29,7 @@ n1과 n2가 각각 30이상이 되면 표본평균차 $\overline{x_{1}}-\overlin
 
 검증통계치는 다음과 같다.  
 <br>
+$t= \frac{(\overline{x_{1}}-\overline{x_{2}})}{SE} ,$    
 $t= \frac{(\overline{x_{1}}-\overline{x_{2}})-(\mu_{1}-\mu_{2})}{SE}$  
   
 > 가설검증  
@@ -77,7 +78,15 @@ $S_{p}^{2} = \frac{(n_{1}-1)S_{1}^{2}+(n_{2}-1)S_{2}^{2}}{n_{1}+n_{2}-2}$
   
 소표본의 신뢰구간  
 ![img2](https://latex.codecogs.com/svg.image?(\overline{X}_{1}-\overline{X}_{2})-t_{\alpha/2,n_{1}+n_{2}-2}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\leq\mu_1-\mu_2\leq(\overline{X}_{1}-\overline{X}_{2})+t_{\alpha/2,n_{1}+n_{2}-2}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}})  
-    
+
+> 분산분석을 이용한 두 모집단 평균차 추정      
+
+두 표본의 평균차($\overline{x_1}-\overline{x_2}$)를 표본통계량으로 활용해 검증하는  
+방법 외에도 두 모집단 평균에 우의한 차이가 존재하는지는 분산분석(ANOVA)를 통해  
+검증가능하다. 분산분석은 통상 표본의 평균차를 이용해 검증할 수 없는 세 개 이상의  
+모집단 사이에 유의한 평균차가 존재하는지 여부를 검증하는데 보편적으로 활용되지만  
+두 모집단 사이의 평균차가 존재하는지 여부를 검증하는데도 활용가능하다.    
+  
 참고 출처:  
 http://contents.kocw.or.kr/document/2012_1_11.pdf  
 http://contents.kocw.or.kr/KOCW/document/2015/chungnam/junkwanghee/10.pdf  
