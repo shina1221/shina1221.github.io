@@ -1,0 +1,56 @@
+---
+layout: post
+title: 제곱합과 평균제곱합  
+date: 2023-08-30 19:21:23 +0900
+category: statistics 
+use_math: true
+---
+# 비전공자를 위한 통계방법론    
+> 제곱합(SS)과 평균제곱합(MS)    
+
+표본내분산: 각 표본에 속한 개체들의 Y값($y_{ij}:j$번째 표본에 속한 i번째 개체의 Y값)이  
+해당 표본의 Y평균값($\overline{y}:j$는 j번째 표본의 Y평균값)으로부터 떨어진 정도를  
+나타내는 지표이다.  
+k개의 표본과 개별 표본안에 n개의 개체들이 포함되어 있는 경우로 일반화하면 다음과 같다.  
+표본내분산(표본내평균제곱합) = $\frac{\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ij}-\overline{y_{j}})^2}{k(n-1)} $  
+분자는 표본내제곱합(SSW:sum of squares within)라 한다.  
+분모인 k(n-1)은 표본내제곱합에 딸린 자유도이다.  
+이렇게 계산식을 통해 나온 표본내분산은 곧 표본내평균제곱합(MSW: mean square within)라고 한다.  
+  
+표본간분산: 개별 표본의 평균값$\overline{y}_i$이 총평균값$\overline{\overline{y}}$  
+주위로 흩어져 있는 정도를 나타내는 지표이다.  
+즉 표본평균$\overline{y}_j$들의 분산을 나타내는 지표이다.  
+식에서 $n_j$는 j번째 표본에 속한 개체수로 일종의 가중치처럼 쓰였다.  
+표본간분산 = $\frac{\sum_{j=1}^{k}n_j\cdot(\overline{y}_j-\overline{\overline{y}})^2}{k-1}$  
+  
+분자는 표본간제곱합(SSB: sum of squares between)이다.  
+분모는 k-1로 표본간제곱합에 딸린 자유도이다.  
+표본간제곱합을 자유도로 나는 값은 표본간평균제곱합(MSB: mean squares between)이라 한다.  
+즉 표본간분산은 곧 표본간평균제곱합(MSB)이다.
+  
+앞서 봤던 분산분석의 검증통계량 F=표본간분산/표본내분산은  
+F=MSB/MSW로 나타낼 수 있다.  
+  
+표본내분산이 개별 표본에 속한 개체들이 해당 표본의 표본평균 주의로 얼마나 흩어져  
+있는지를 나타내는 분산이라면, 표본간분산은 개별 표본평균이 총평균 주의로 얼마나  
+흩어져 있는지를 나타내는 분산이다.  
+총분산(total variance)은 모든 표본을 하나로 통합한 뒤 모든 개별 개체들이 총 평균 주위로 얼마나 흩어져 있는지를 나타내는 분산이다.  
+총분산=$\frac{\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ij}-\overline{\overline{y}})^2}{n_T(=k\cdot n)-1}$  
+분자는 총제곱합 SST(sum of squares total)이라고 한다.  
+분모인 $k \cdot n-1$는 총제곱합에 딸린 자유도라고 한다.  
+  
+세가지 제곱합 사이의 관계  
+총제곱합(SST) = 표본간제곱합(SSB)+표본내제곱합(SSW)  
+$\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ij}-\overline{\overline{y}})^2 =
+\sum_{j=1}^{k}n_j\cdot(\overline{y}_j-\overline{\overline{y}})^2+\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ij}-\overline{y_{j}})^2$  
+이를 재정렬하면  
+$y_{ji}=\overline{\overline{y}}+(\overline{y}_{ji}-\overline{\overline{y}})+(y_{ji}-\overline{y}_j)$  
+$y_{ji}-\overline{\overline{y}}=(\overline{y}_{ji}-\overline{\overline{y}})+(y_{ji}-\overline{y}_j)$  
+해당 식은 한 개체 i의 관측치$y_{ji}$가 총평균$\overline{\overline{y}}$으로부터 떨어져  
+있는 정도를 나타내는 총편차$y_{ji}-\overline{\overline{y}}$는 그 개체가 속한 j번째  
+표본의 평균$\overline{y}_j$이 총평균으로부터 떨어져 있는 정도이다.   
+즉, 표본간편차$\overline{y}_j-\overline{\overline{y}}$에 그 개체가 j번째 표본의  
+표본으로부터 떨어져 있는 정도,  
+즉 표본내편차$y_{ji}-\overline{y}_j$를 더한 값과 같다는 것을 보여준다.  
+  
+![분산분석 결과표](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EB%8F%84%EC%84%9C/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%ED%86%B5%EA%B3%84%EB%B0%A9%EB%B2%95%EB%A1%A0/img/%EB%B6%84%EC%82%B0%EB%B6%84%EC%84%9D%20%EA%B2%B0%EA%B3%BC%ED%91%9C.jpg)  
