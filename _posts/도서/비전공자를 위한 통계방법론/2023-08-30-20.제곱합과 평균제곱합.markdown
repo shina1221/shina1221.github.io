@@ -45,8 +45,8 @@ F=MSB/MSW로 나타낼 수 있다.
 $\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ij}-\overline{\overline{y}})^2 =
 \sum_{j=1}^{k}n_j\cdot(\overline{y}_j-\overline{\overline{y}})^2+\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ij}-\overline{y_{j}})^2$  
 이를 재정렬하면  
-$y_{ji}=\overline{\overline{y}}+(\overline{y}_{ji}-\overline{\overline{y}})+(y_{ji}-\overline{y}_j)$  
-$y_{ji}-\overline{\overline{y}}=(\overline{y}_{ji}-\overline{\overline{y}})+(y_{ji}-\overline{y}_j)$  
+$y_{ji}=\overline{\overline{y}}+(y_{ji}-\overline{\overline{y}})+(y_{ji}-\overline{y}_j)$  
+$y_{ji}-\overline{\overline{y}}=(\overline{y}_{j}-\overline{\overline{y}})+(y_{ji}-\overline{y}_j)$  
 한 개체 i의 관측치$y_{ji}$가 총평균$\overline{\overline{y}}$으로부터 떨어져  
 있는 정도를 나타내는 총편차$y_{ji}-\overline{\overline{y}}$는 그 개체가 속한 j번째  
 표본의 평균$\overline{y}_j$이 총평균으로부터 떨어져 있는 정도이다.  
