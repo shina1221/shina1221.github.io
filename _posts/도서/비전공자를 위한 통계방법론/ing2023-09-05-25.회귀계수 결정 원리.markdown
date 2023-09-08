@@ -1,0 +1,10 @@
+---
+layout: post
+title: 회귀분석의 개념    
+date: 2023-09-05 19:21:23 +0900
+category: statistics 
+use_math: true
+---
+# 비전공자를 위한 통계방법론    
+> 회귀분석의 개념  
+
