@@ -68,7 +68,7 @@ $\overline{x}-Z_{\alpha/2}\cdot SE \leq \mu \leq \overline{x}+Z_{\alpha/2}\cdot 
 **유의수준의 여집합 확률로 $1-\alpha$는 추정의 결론이 옳을 것이라는 확신의 정도인 신뢰수준을 의미한다.**  
 SE는 해당 표본통계량의 표본오차를 의미한다.
 <br>    
-다만 위의 표본오차 공식속에 있는 모집단 표준편차$\sigma$는 그값을 알 수 없기 때문에  
+다만 위의 표본오차 공식속에 있는 모집단 표준편차$\sigma$는 그 값을 알 수 없기 때문에  
 표본 표준편차s로 대체해 표본오차값을 계산하고 이는 표준정규분포가 아닌 t분포를 따르게 된다.
 t분포를 따르는 신뢰구간은 다음과 같다.    
 $\overline{x}-t_{\alpha/2}\cdot SE \leq \mu \leq \overline{x}+t_{\alpha/2}\cdot SE$
@@ -94,7 +94,7 @@ $P[-Z_{0.025}\leq \frac{\overline{x}-\mu}{\sigma/\sqrt{n}}\leq-Z_{0.025} ] $
 <br>  
 **표준편차(standard deviaton)와 표준오차(standard error//SE)는 다른 것이다.**  
 표준편차는 모집단의 분포가 얼마나 퍼져있는가를 서술하는 개념이다.  
-$\sigma = \sqrt{E[(X-\mu)^2]}$  
+$\sigma = \sqrt{\frac{\sum(x_n-\mu)^2}{N}}$  
 표준오차는 표본통계량의 표준 편차를 의미하며 평균의 추정치에 대한 불확실한 정도를 수치화한 것이다.  
 $\sigma _{\overline{x}}=\frac{\sigma}{\sqrt{n}}$  
 표본이 매번 추출될 때마다 값이 바뀌기 때문에 표본 통계량은 매번 그 값에 오차가 있다.    
