@@ -62,6 +62,7 @@ $\sqrt{P(1-P)/n}$이다. 이때 모집단 비율 P는 모집단 통계량이므�
 신뢰구간은 다음과 같다.  
 $\overline{p}-t_{\alpha/2, n-1} \cdot SE \leq P \leq \overline{p}+t_{\alpha/2, n-1} \cdot SE$
 <br>  
+<br>  
 > 가설검증  
 
 -양측검증  
