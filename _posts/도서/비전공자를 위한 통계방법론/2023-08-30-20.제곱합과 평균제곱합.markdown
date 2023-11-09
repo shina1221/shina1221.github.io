@@ -13,7 +13,7 @@ use_math: true
 나타내는 지표이다.  
 k개의 표본과 개별 표본안에 n개의 개체들이 포함되어 있는 경우로 일반화하면 다음과 같다.  
 표본내분산(표본내평균제곱합) = $\frac{\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ij}-\overline{y_{j}})^2}{k(n-1)}$  
-ex)$({\frac{\sum_{i=1}^{20}(y_{1i}-\overline{y}1)^2}{20-1}+\frac{\sum_{i=1}^{20}(y_{2i}-\overline{y}2)^2}{20-1}+\frac{\sum_{i=1}^{20}(y_{3i}-\overline{y}3)^2}{20-1}+\frac{\sum_{i=1}^{20}(y_{4i}-\overline{y}_4)^2}{20-1}})\div 4$  
+ex)![식1](https://latex.codecogs.com/svg.image?({\frac{\sum_{i=1}^{20}(y_{1i}-\overline{y}1)^2}{20-1}&plus;\frac{\sum_{i=1}^{20}(y_{2i}-\overline{y}2)^2}{20-1}&plus;\frac{\sum_{i=1}^{20}(y_{3i}-\overline{y}3)^2}{20-1}&plus;\frac{\sum_{i=1}^{20}(y_{4i}-\overline{y}_4)^2}{20-1}})\div&space;4&space;)  
 분자는 표본내제곱합(SSW:sum of squares within)라 한다.  
 분모인 k(n-1)은 표본내제곱합에 딸린 자유도이다.  
 이렇게 계산식을 통해 나온 표본내분산은 곧 표본내평균제곱합(MSW: mean square within)라고 한다.
