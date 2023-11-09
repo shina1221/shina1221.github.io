@@ -32,8 +32,8 @@ ex)![식1](https://latex.codecogs.com/svg.image?(\frac{\sum_{i=1}^{20}(y_{1i}-\o
 앞서 봤던 분산분석의 검증통계량 F=표본간분산/표본내분산은  
 F=MSB/MSW로 나타낼 수 있다.
 <br>  
-표본내분산이 개별 표본에 속한 개체들이 해당 표본의 표본평균 주의로 얼마나 흩어져 있는지를 나타내는 분산이라면,  
-표본간분산은 개별 표본평균이 총평균 주의로 얼마나 흩어져 있는지를 나타내는 분산이다.  
+표본내분산이 개별 표본에 속한 개체들이 해당 표본의 표본평균 주위로 얼마나 흩어져 있는지를 나타내는 분산이라면,  
+표본간분산은 개별 표본평균이 총평균 주위로 얼마나 흩어져 있는지를 나타내는 분산이다.  
 총분산(total variance)은 모든 표본을 하나로 통합한 뒤 모든 개별 개체들이 총 평균 주위로 얼마나 흩어져 있는지를 나타내는 분산이다.  
 총분산= ![식7](https://latex.codecogs.com/svg.image?\frac{\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ij}-\overline{\overline{y}})^2}{n_T(=k\cdot&space;n)-1})  
 분자![식7](https://latex.codecogs.com/svg.image?\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ij}-\overline{\overline{y}})^2&space;)는 총제곱합 SST(sum of squares total)이라고 한다.  
