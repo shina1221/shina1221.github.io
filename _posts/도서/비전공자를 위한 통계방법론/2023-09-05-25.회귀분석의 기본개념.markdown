@@ -50,7 +50,7 @@ $\widehat{Y}_i$는 i번째 개체의 Y값에 대한 예측치로서 i번째 개�
 
 > 상관계수와 회귀계수의 관계  
 
-1차 함수로 표시되는 회귀방정식 $\widehat{Y}_i = a + b \cdot X_i$에서의 회귀계수 b와  
+1차 함수로 표시되는 회귀방정식 $\widehat{Y}_i=a+b\cdot X_i$에서의 회귀계수 b와  
 상관계수 $r_{xy}$사이에는 다음의 관계가 성립한다.  
 $b=r_{xy}\cdot\frac{s_y}{s_x}$ 혹은 $r_{xy}=b \cdot \frac{s_x}{s_y}$  
 S_x와 S_y는 각각 변수 X와 Y의 표본 표준편차이다.  
