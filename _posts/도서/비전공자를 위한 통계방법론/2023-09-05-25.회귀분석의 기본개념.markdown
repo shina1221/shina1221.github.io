@@ -52,7 +52,7 @@ $\widehat{Y}_i$는 i번째 개체의 Y값에 대한 예측치로서 i번째 개�
 
 1차 함수로 표시되는 회귀방정식 ![식1](https://latex.codecogs.com/svg.image?\widehat{Y}_i=a&plus;b\cdot&space;X_i&space;)에서의 회귀계수 b와  
 상관계수 ![식2](https://latex.codecogs.com/svg.image?r_{xy})사이에는 다음의 관계가 성립한다.  
-![식3](https://latex.codecogs.com/svg.image?b=r_{xy}\cdot\frac{s_y}{s_x}) 혹은 ![식4](https://latex.codecogs.com/svg.image?r_{xy}=b\cdot\frac{s_x}{s_y}) 
+![식3](https://latex.codecogs.com/svg.image?b=r_{xy}\cdot\frac{s_y}{s_x}) 혹은 ![식4](https://latex.codecogs.com/svg.image?r_{xy}=b\cdot\frac{s_x}{s_y})  
 $S_x$와 $S_y$는 각각 변수 X와 Y의 표본 표준편차이다.  
 
 
