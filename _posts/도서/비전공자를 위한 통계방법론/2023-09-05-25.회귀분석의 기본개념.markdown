@@ -46,16 +46,14 @@ $\widehat{Y}_i$는 i번째 개체의 Y값에 대한 예측치로서 i번째 개�
 회귀방정식: 확정형 함수식(오차항 없음)이다.  
 회귀선(최적선): 회귀방정식을 X-Y좌표상에 나타낸 선이다.  
 회귀분석: 계수 a와 b를 구하는 과정이다.
-chk $\overline{X}$
 <br>  
   
 > 상관계수와 회귀계수의 관계  
 
-chk $\overline{X}$
-1차 함수로 표시되는 회귀방정식 $\widehat{Y}_i=a+b\cdot X_i$에서의 회귀계수 b와  
-상관계수 $r_{xy}$사이에는 다음의 관계가 성립한다.  
-$b=r_{xy}\cdot\frac{s_y}{s_x}$ 혹은 $r_{xy}=b \cdot\frac{s_x}{s_y}$  
-S_x와 S_y는 각각 변수 X와 Y의 표본 표준편차이다.  
+1차 함수로 표시되는 회귀방정식 ![식1](https://latex.codecogs.com/svg.image?\widehat{Y}_i=a&plus;b\cdot&space;X_i&space;)에서의 회귀계수 b와  
+상관계수 ![식2](https://latex.codecogs.com/svg.image?r_{xy})사이에는 다음의 관계가 성립한다.  
+![식3](https://latex.codecogs.com/svg.image?b=r_{xy}\cdot\frac{s_y}{s_x}) 혹은 ![식4](https://latex.codecogs.com/svg.image?r_{xy}=b\cdot\frac{s_x}{s_y}) 
+$S_x$와 $S_y$는 각각 변수 X와 Y의 표본 표준편차이다.  
 
 
 
