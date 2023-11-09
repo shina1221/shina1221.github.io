@@ -37,7 +37,7 @@ F=MSB/MSW로 나타낼 수 있다.
 흩어져 있는지를 나타내는 분산이다.  
 총분산(total variance)은 모든 표본을 하나로 통합한 뒤 모든 개별 개체들이 총 평균 주위로 얼마나 흩어져 있는지를 나타내는 분산이다.  
 총분산=$\frac{\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ij}-\overline{\overline{y}})^2}{n_T(=k\cdot n)-1}$  
-분자$\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ij}-\overline{\overline{y}})^2는 총제곱합 SST(sum of squares total)이라고 한다.  
+분자$\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ij}-\overline{\overline{y}})^2$는 총제곱합 SST(sum of squares total)이라고 한다.  
 분모인 $k \cdot n-1$는 총제곱합에 딸린 자유도라고 한다.
 <br>  
 세가지 제곱합 사이의 관계  
