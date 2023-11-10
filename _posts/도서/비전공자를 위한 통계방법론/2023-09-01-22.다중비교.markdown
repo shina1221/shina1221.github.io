@@ -78,9 +78,9 @@ Bonferroni 조정 $\alpha$값으로 설정해 개별 쌍에 대한 가설 검증
 MSE는 분산분석표에 나타나는 오차평균제곱합(MSE)로 분산분석에서 등분산을  
 가정하고 있는 모집단의 공통분산 $\sigma^2$에 대한 추정치이다.  
 또한 $\sqrt{MSE(\frac{1}{n_A}+\frac{1}{n_B})}$는 두 표본평균의 평균차로  
-($\overline{x}_A-\overline{x}_B$)의 표본오차(SE)이다.  
-$t=\frac{\overline{x}_A-\overline{x}_B}{\sqrt{MSE(\frac{1}{n_A}+\frac{1}{n_B})}}$  
-검증통계량을 통해 자유도 $(n_A+n_B-2)$인 t분포상의 기각영역 경계값 $t_{\alpha/2, n_A+n_B-2}$와 비교해 기각여부를 결정한다.
+(![식2](https://latex.codecogs.com/svg.image?\overline{x}_A-\overline{x}_B&space;))의 표본오차(SE)이다.  
+![식3](https://latex.codecogs.com/svg.image?t=\frac{\overline{x}_A-\overline{x}_B}{\sqrt{MSE(\frac{1}{n_A}&plus;\frac{1}{n_B})}})  
+검증통계량을 통해 자유도 ![식4](https://latex.codecogs.com/svg.image?(n_A&plus;n_B-2))인 t분포상의 기각영역 경계값 ![식5](https://latex.codecogs.com/svg.image?t_{\alpha/2,n_A&plus;n_B-2})와 비교해 기각여부를 결정한다.
 <br>  
 *피셔의 LSD
 <br>  
