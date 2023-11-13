@@ -20,11 +20,12 @@ use_math: true
 일정한 요인(factor)을 기준으로 구분된 모집단들($x_1, x_2, x_3$)의 평균이 다르다고  
 할 수 있는지 여부를 검증하는 분석틀(이하 분산분석(ANOVA))로 이해해본다.
 <br>  
+![식0]()
 $\widehat{Y}_i=\beta_0+\beta_1 \cdot X_i +\epsilon_i $  
-만약 $\beta_0$의 값이 0이 아니라면(X와 Y간에 유의미한 관계가 존재한다면)  
+만약 ![식0_0]()$\beta_0$의 값이 0이 아니라면(X와 Y간에 유의미한 관계가 존재한다면)  
 독립변수 X의 값의 크기에 따라 모집단을 다수의 모집단으로 구분해볼 수 있을 것이고,  
 X의 값의 크기에 따라 구분된 개별 모집단의 Y의 기대값은 다음과 같을 것이다.  
-$\widehat{Y}_i=\beta_0+\beta_1 \cdot X_i $
+![식0_1]()$\widehat{Y}_i=\beta_0+\beta_1 \cdot X_i $
 <br>  
 아래처럼 구간별로 X의 크기에 따라 구분된 모집단들의 집단별 Y의 기대값(평균값)을  
 볼 수 있다.  
@@ -50,10 +51,6 @@ i번째 개체의 Y 관측치$Y_{ji}$가 나올 것이다.
 ![식1](https://latex.codecogs.com/svg.image?y_{ji}-\overline{y}=(\widehat{y}_i-\overline{y})&plus;(y_{ji}-\widehat{y}_j))  
 재정리  
 ![식2](https://latex.codecogs.com/svg.image?\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ji}-\overline{y})^2\\=\sum_{j=1}^{k}\sum_{i=1}^{n}(\widehat{y}_j-\overline{y})^2&plus;\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ji}-\widehat{y}_j)^2&plus;2\cdot\sum_{j=1}^{k}\sum_{i=1}^{n}(\widehat{y}_{j}-\overline{y})(y_{ji}-\widehat{y}_j)\\=\sum_{j=1}^{k}n_j\cdot(\widehat{y}_j-\overline{y})^2&plus;\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ji}-\widehat{y}_j)^2&space;)  
-$\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ji}-\overline{y})^2=
-\sum_{j=1}^{k}\sum_{i=1}^{n}(\widehat{y}_j-\overline{y})^2+
-\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ji}-\widehat{y}_j)^2+2 \cdot \sum_{j=1}^{k}\sum_{i=1}^{n}(\widehat{y}_{j}-\overline{y})(y_{ji}-\widehat{y}_j)$    
-$=\sum_{j=1}^{k}n_j\cdot(\widehat{y}_j-\overline{y})^2+\sum_{j=1}^{k}\sum_{i=1}^{n}(y_{ji}-\widehat{y}_j)^2 $  
 SST=회귀제곱합SSR(표본간제곱합,SSB와 상응)+오차제곱합SSE(표본내제곱합, SSW와 상응)  
 회귀평균제곱합(MSR)=회귀제곱합/자유도  
 오차평균제곱합(MSE)=오차제곱합/자유도  
