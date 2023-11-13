@@ -24,7 +24,7 @@ $Cor(\epsilon_i, \epsilon_j)=0$
 1. 특정한 X값 하에서 오차$\epsilon$의 기대값은 0이다.  
 회귀모형 ![식1](https://latex.codecogs.com/svg.image?\widehat{Y}_i=\beta_0&plus;\beta_1\cdot&space;X_i&plus;\epsilon_i)에서  
 특정한 X값이 주어지면 조건부 Y의 기대값, ![식1-1](https://latex.codecogs.com/svg.image?E(Y|X_i))이 확정적 부분  
-![식2](https://latex.codecogs.com/svg.image?\beta_0&plus;beta_{1}X_i)과 같다고 결론을 내릴 수 있는 근거이자 그렇게 결론을 내리기  
+![식2](https://latex.codecogs.com/svg.image?\beta_0&plus;\beta_{1}X_i)과 같다고 결론을 내릴 수 있는 근거이자 그렇게 결론을 내리기  
 위한 전제조건이다.  
 해당 가정이 전제되어야 특정한 X값이 주어진 상황에서 조건부 Y의 기대값은  
 $E(Y/X_i)=E(\beta_0+\beta_1 \cdot X_i + \epsilon_i)=\beta_0+\beta_1 \cdot X_i +E(\epsilon_i | X_i)=\beta_0+\beta_1 \cdot X_i$이 된다.  
