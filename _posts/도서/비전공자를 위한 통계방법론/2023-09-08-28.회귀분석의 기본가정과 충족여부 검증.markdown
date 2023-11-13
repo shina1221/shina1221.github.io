@@ -170,7 +170,8 @@ y축은 앞서 구한 잔차![식3](https://latex.codecogs.com/svg.image?e_i(y-\
 [zephyrus1111](https://zephyrus1111.tistory.com/54#c1)
 <br>  
 
-> qqplot  
+> qqplot
+
 정규분포 가정하에서의 이론값을 사용한다.  
 일직선 형태로 나오는 그림이 정규성 가정을 위배하지 않는것이다.  
 k는 잔차의 순위를 의미한다.    
