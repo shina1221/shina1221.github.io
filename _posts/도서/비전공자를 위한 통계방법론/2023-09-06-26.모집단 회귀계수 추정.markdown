@@ -49,8 +49,8 @@ $ b_1 - t_{\alpha/2,n-2}\cdot SE \leq \beta_1\leq b_1 + t_{\alpha/2,n-2}\cdot SE
 
 -양측검증  
 ex)지능은 학업성취도에 유미의한 영향을 미칠 것이다.  
-$\widehat{Y}_{i} = \beta_{0} + \beta_{1} \cdot X_{i}$  
-대립가설: $\beta_{1}$은 0이 아닐 것이다.  
+![식1-1](https://latex.codecogs.com/svg.image?\widehat{Y}_{i}=\beta_{0}&plus;\beta_{1}\cdot&space;X_{i})  
+대립가설: ![식1-2](https://latex.codecogs.com/svg.image?\beta_{1})은 0이 아닐 것이다.  
 검증통계치가 왼쪽 경계값 이하거나 오른쪽 경계값 이상의 값이라면 귀무가설을 기각하고  
 대립가설을 채택한다.
 <br>    
@@ -99,5 +99,5 @@ t분포(자유도 n-2)의 특성을 띈다.
 모집단 예측치 $\widehat{Y}$의 구간추정치에 동일한 $x_0$를 갖고 있는 개인들의 표준편차 
 동일한 $x_0$을 갖고 있는 개인들의 표준편차(오차의 표준편차로서 $\sqrt{MSE}$에 해당)에  
 따라 변할 수 있는 정도를 반영해주면 된다.  
-이를 통합해 신뢰수준 $100 \cdot (1-\alpha)%에서 특정 개체의 Y_i 구간추정량을 정리하면 다음과 같다.  
-$\widehat{y}-t_{\alpha/2, n-2} \cdot (SE + \sqrt{MSE}) \leq \ Y_{i} \leq  \widehat{y}+t_{\alpha/2, n-2} \cdot (SE + \sqrt{MSE})SE$  
+이를 통합해 신뢰수준 ![식1-3](https://latex.codecogs.com/svg.image?100\cdot(1-\alpha)%)에서 특정 개체의 Y_i 구간추정량을 정리하면 다음과 같다.  
+![식1-4](https://latex.codecogs.com/svg.image?\widehat{y}-t_{\alpha/2,n-2}\cdot(SE&plus;\sqrt{MSE})\leq\;Y_{i}\leq\widehat{y}&plus;t_{\alpha/2,n-2}\cdot(SE&plus;\sqrt{MSE})SE)
