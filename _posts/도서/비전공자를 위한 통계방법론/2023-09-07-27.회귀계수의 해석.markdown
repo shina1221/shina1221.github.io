@@ -20,11 +20,11 @@ use_math: true
 일정한 요인(factor)을 기준으로 구분된 모집단들($x_1, x_2, x_3$)의 평균이 다르다고  
 할 수 있는지 여부를 검증하는 분석틀(이하 분산분석(ANOVA))로 이해해본다.  
   
-$\widehat{Y}_{i}=\beta_{0}+\beta_{1} \cdot X_{i} +\epsilon_{i} $  
+$\widehat{Y}_i=\beta_0+\beta_1 \cdot X_i +\epsilon_i $  
 만약 beta0의 값이 0이 아니라면(X와 Y간에 유의미한 관계가 존재한다면)  
 독립변수 X의 값의 크기에 따라 모집단을 다수의 모집단으로 구분해볼 수 있을 것이고,  
 X의 값의 크기에 따라 구분된 개별 모집단의 Y의 기대값은 다음과 같을 것이다.  
-$\widehat{Y}_{i}=\beta_{0}+\beta_{1} \cdot X_{i} $  
+$\widehat{Y}_i=\beta_0+\beta_1 \cdot X_i $  
   
 아래처럼 구간별로 X의 크기에 따라 구분된 모집단들의 집단별 Y의 기대값(평균값)을  
 볼 수 있다.  
