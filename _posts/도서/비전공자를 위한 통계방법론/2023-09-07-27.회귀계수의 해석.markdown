@@ -57,8 +57,8 @@ SST=회귀제곱합SSR(표본간제곱합,SSB와 상응)+오차제곱합SSE(표�
 <br>  
 ![단순회귀모형의 분산분석 결과표](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EB%8F%84%EC%84%9C/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%ED%86%B5%EA%B3%84%EB%B0%A9%EB%B2%95%EB%A1%A0/img/%EB%8B%A8%EC%88%9C%ED%9A%8C%EA%B7%80%EB%AA%A8%ED%98%95%EC%9D%98%20%EB%B6%84%EC%82%B0%EB%B6%84%EC%84%9D%20%EA%B2%B0%EA%B3%BC%ED%91%9C.jpg)
 <br>  
-검증통계량 F값이 기각영역 경계값 ![식0_11](https://latex.codecogs.com/svg.image?F_{\alpha,1,n-2})보다 크거나 같거나  
-유의확률 p값이 유의수준 ![식0_12](https://latex.codecogs.com/svg.image?\alpha)보다 작거나 같으면 귀무가설을 기각하고 대립가설을 채택한다.  
+검증통계량 F값이 기각영역 경계값 ![식11](https://latex.codecogs.com/svg.image?F_{\alpha,1,n-2})보다 크거나 같거나  
+유의확률 p값이 유의수준 ![식12](https://latex.codecogs.com/svg.image?\alpha)보다 작거나 같으면 귀무가설을 기각하고 대립가설을 채택한다.  
 이것이 의미하는 것은 
 **-X 수준에 따라 구분한 모집단들의 평균이 서로 다르다고 할 수 있다는 것과 동시에**  
 **-회귀모형 $\widehat{Y}_i=\beta_0+\beta_1 \cdot X_i +\epsilon_i $에서 X의 회귀계수**  
