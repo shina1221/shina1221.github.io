@@ -7,12 +7,15 @@ use_math: true
 ---
 > 수치적 검정
 
+<br>  
+
 > 정규성 검정  
+
 -shapiro wilks test: 관측데이터를 오름차순으로 정렬한다.  
 이후 표준 정규분포에 추출된 순서 통계량의 이론적 기대값을 구한다.  
 구한 기대값과 오름차순으로 정렬된 샘플간의 상관계수를 구한다.  
-상관계수가 1에 가까울수록 관측데이터는 정규분포에 가깝다고 볼 수 있다.  
-  
+상관계수가 1에 가까울수록 관측데이터는 정규분포에 가깝다고 볼 수 있다.
+<br>  
 상관계수를 구할 시 순서 통계량에 분산이 들어간다.  
 분산을 구하려면 이중적분을 해야해 근사값으로 대체해야한다.  
 scipy의 stats.shapiro(표준화된 잔차)를 통해 검정통계량 (stats.shapiro(표준화된 잔차)[0])를 구하고, p-value(stats.shapiro(표준화된 잔차)[1])를 구한다.  
@@ -26,71 +29,71 @@ scipy의 stats.shapiro(표준화된 잔차)를 통해 검정통계량 (stats.sha
 -각 집단별 등수의 합을 계산한다.  
 -각 집단별 u값을 계산한다.  
 -두 개의 u값을 이용해 집단간 차이를 검정해 z값을 뽑는다.  
-z값으로 양측검정을 수행해 p-value가 0.05를 넘을 경우 귀무가설을 기각해 두 집단간 차이가 없다고 해석한다.   
-
+z값으로 양측검정을 수행해 p-value가 0.05를 넘을 경우 귀무가설을 기각해 두 집단간 차이가 없다고 해석한다.
+<br>  
 *등수가 동일한 표본이 있을 경우에는 z값을 보정하는 것이 원칙이나 그 수가 많지 않을  
-때에는 보정하지 않아도 분석결과에 큰 차이가 없으므로 괜찮다.  
-
+때에는 보정하지 않아도 분석결과에 큰 차이가 없으므로 괜찮다.
+<br>  
 -correlation test: qqplot에서 관측된 잔차가 이론적 잔차(직선)에 가까운 것은  
 둘의 상관계수가 1에 가깝다는 개념을 차용한 것이다.  
 상관계수 값이 특정 값보다 크다면 오차가 정규분포를 따른다고 볼 수 있다.  
 대립가설: 오차항은 정규분포가 아니다.  
 유의수준 5%에서 검정통계량을 이용해 테스트 할 경우 양측 검정은 의미가 없고  
 왼쪽 검정만 수행하면 된다. 특정 임계치보다 크다고 해서 기각할 수 없고  
-상관계수의 값이 커질수록 정규분포라 얘기할 수 있는 특성을 가지고 있기 때문이다.   
-  
+상관계수의 값이 커질수록 정규분포라 얘기할 수 있는 특성을 가지고 있기 때문이다.
+<br>  
 -komogorov-smirnov test(콜모고로프 스미르노프 검정): 관측된 데이터가 특정 분포를 잘  
-따르는지를 검정하는 방법이다.  
+따르는지를 검정하는 방법이다.
+<br>  
 
-> 등분산성 검정  
+> 등분산성 검정
+
 등분산성이란 잔차의 분산이 독립변수와 상관없이 일정하다는 것이다.  
-등분산성을 가정할 때 일부 절차에는 ANOVA나 t test가 수행된다.  
-
+등분산성을 가정할 때 일부 절차에는 ANOVA나 t test가 수행된다.
+<br>  
 levene이나 bartlett 검정을 수행한다.  
 등분산성을 만족할 때: t 검정 
-등분산성을 만족하지 못할 때: Welch 검정, Brown-Forsythe 검정  
-
+등분산성을 만족하지 못할 때: Welch 검정, Brown-Forsythe 검정
+<br>  
 IN ANOVA(Levene, Bartlett, Brown Forsythe)  
 *ANOVA 수행전에 등분산성을 검정한다. ANOVA 수행시 표본은 등분산 분포에서  
-추출된 것으로 가정된다. 만약 이 가정이 유효하지 않다면 F검정도 유효하지 않다.   
-
+추출된 것으로 가정된다. 만약 이 가정이 유효하지 않다면 F검정도 유효하지 않다.
+<br>  
 -Levene's test: 
 p-value가 유의수준 보다 작으면 표본 분산에서 얻은 차이가 등분산 모집단의 무작위 샘플링을 기반으로 발생했을 가능성이 낮다. 귀무가설이 기각되면 모집단의 분산간에  
 차이가 있다고 볼 수 있다.  
--Welsh's t test (이분산 t test): 비교되는 두 샘플의 통계단위가 겹치치 않을 때 사용한다.    
-
--bartlett test:모수적 방법이다. 
-
--Brown-Forsythe test: 
-
+-Welsh's t test (이분산 t test): 비교되는 두 샘플의 통계단위가 겹치치 않을 때 사용한다.
+<br>  
+-bartlett test:모수적 방법이다.
+<br>  
+-Brown-Forsythe test:  
 등분산성을 만족하지 않는 경우에 사용한다. (brown-forsythe 혹은 welch를 쓴다.)    
 선형모형을 적합한다(=beta0과 beta1의 계수를 찾는것이다.)  
 적합한 선형 모형을 이용해 잔차를 구한다.  
 설명변수에 따른 두 그룹으로 잔차를 나눈다.  
 각 그룹별 잔차와 중간값간 차이의 평균을 구한다.  
 두 그룹에서 계산한 차이로 t test를 수행한다.  
-두 그룹에서 계산한 검정통계량이 유의미하게 작으면 두 그룹의 차이는 없다고 판단한다.  
-  
+두 그룹에서 계산한 검정통계량이 유의미하게 작으면 두 그룹의 차이는 없다고 판단한다.
+<br>  
 -Breusch-pagan test: 
-잔차의 분포가 정규분포일 때 사용한다.  
-
-https://en.wikipedia.org/wiki/Homoscedasticity_and_heteroscedasticity#Detection
-참고해서 추가정리 
-
-오름차순으로 정렬했을 때 잔차의 순위와   
- shapiro-wilk, jarque-bera 검정(qqplot) 
-등분산성 가정: breusch-pagan 검정(잔차도)  
- 
-독립성 검정: durbin-watson검정, ACF 등(산점도)     
-
-종속변수 변환에 대해 더 알아볼 것  
-
+잔차의 분포가 정규분포일 때 사용한다.
+<br>  
+[추가 참조 위키피디아](https://en.wikipedia.org/wiki/Homoscedasticity_and_heteroscedasticity#Detection)
+참고해서 추가정리요함.
+<br>  
+오름차순으로 정렬했을 때 잔차의 순위와 shapiro-wilk, jarque-bera 검정(qqplot) 
+등분산성 가정: breusch-pagan 검정(잔차도)
+<br>  
+독립성 검정: durbin-watson검정, ACF 등(산점도)
+<br>  
+종속변수 변환에 대해 더 알아볼 것
+<br>  
 *사후분석(post hoc)  
 ANOVA 검정이 유의미하다면 어떤 수준에서 평균차이가 나는지를 검증하는 방법이다.  
 연구자의 가설없이 ANOVA를 수행한 경우 탐색적으로 평균 차이가 나는 집단을 보기 위해 사용한다.  
 방법으로 봉페로니 교정, 피셔의 LSD, 투키의 HSD, 세페의 방법이 있다.  
-등분산성을 만족한다면 scheffe, 만족하지 못한다면 games-howell을 적용한다.  
-
+등분산성을 만족한다면 scheffe, 만족하지 못한다면 games-howell을 적용한다.
+<br>  
 참고 출처:  
 https://zephyrus1111.tistory.com/55#c1  
 https://en.wikipedia.org/wiki/Homoscedasticity_and_heteroscedasticity#Detection  
