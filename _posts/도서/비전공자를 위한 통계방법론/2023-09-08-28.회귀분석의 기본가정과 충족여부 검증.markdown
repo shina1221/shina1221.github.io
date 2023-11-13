@@ -153,22 +153,23 @@ $\frac{\partial Y}{\partial X}=(0.3 * 2) \cdot X$
 
 > 잔차도  
 
-잔차 $e_i=Y_i-\widehat{Y}_i$  
+잔차![식1](https://latex.codecogs.com/svg.image?e_i=Y_i-\widehat{Y}_i)   
 **잔차도를 통해 우선 패턴의 유무를 확인한다.** 
 **오차의 분산은 독립변수에 영향을 받지 않는다는 것을 확인하기 위함이다.**  
 잔차가 특정 패턴을 가진다면 설명되는 부분에 추가해야할 요소가 남아있음을 의미한다.  
 따라서 잔차는 특정 패턴이 없어야 한다.(그림에 특정 패턴이 보이지 않는 것이 좋은 것이다.)
 <br>  
-y축은 잔차$e_i(y-\overline{y})/RMSE(\sqrt{\frac{1}{n}\sum_{i}^{n}(\widehat{y}_i-y_i)^2})$로 구한다.  
+y축은 잔차![식2](https://latex.codecogs.com/svg.image?e_i(y-\overline{y})/RMSE(\sqrt{\frac{1}{n}\sum_{i}^{n}(\widehat{y}_i-y_i)^2}))로 구한다.  
 잔차들의 합과 평균은 대체로 0이어야 한다.  
 -2나 2를 벗어나는 경우 이상치로 판단한다.
 <br>  
 두번째로 **오차의 등분산성**을 확인한다.  
 **오차의 등분산성 가정을 위배하지 않음을 확인하기 위함이다.**
-y축은 앞서 구한 잔차$e_i(y-\overline{y})/RMSE(\sqrt{\frac{1}{n}\sum_{i}^{n}(\widehat{y}_i-y_i)^2})$값을 절댓값으로 씌운 값을 두고 x축에는 독립변수를 둔다.  
-여기서도 잔차의 절대값이 특정 패턴을 보이는지를 확인하고 
-![참고](https://zephyrus1111.tistory.com/54#c1)
+y축은 앞서 구한 잔차![식3](https://latex.codecogs.com/svg.image?e_i(y-\overline{y})/RMSE(\sqrt{\frac{1}{n}\sum_{i}^{n}(\widehat{y}_i-y_i)^2}))값을 절댓값으로 씌운 값을 두고 x축에는 독립변수를 둔다.  
+여기서도 잔차의 절대값이 특정 패턴을 보이는지를 확인한다.  
+[zephyrus1111](https://zephyrus1111.tistory.com/54#c1)
 <br>  
+
 > qqplot  
 정규분포 가정하에서의 이론값을 사용한다.  
 일직선 형태로 나오는 그림이 정규성 가정을 위배하지 않는것이다.  
@@ -178,7 +179,7 @@ $\sqrt{MSE}\times z((k-0.375)/(n+0.25))$를 통해 잔차 이론값을 구한다
 Blom방법이다. R에선 11개부터는 rankit($z(\frac{(k-\frac{1}{2})}{n})$)의 방법을 쓴다.
 <br>  
 x축은 정규분포를 따르는 잔차의 확률변수이고 y축은 잔차값이다. 
-![참고](https://en.wikipedia.org/wiki/Q%E2%80%93Q_plot)  
+![위키피디아](https://en.wikipedia.org/wiki/Q%E2%80%93Q_plot)  
 이렇게 구하기 힘들다면  
 **scipy.stats의 probplot을 활용해 구할 수 있다.**  
 위의 qqplot과 probplot으로 구한 그림은 다른데 qqplot은 평균이 0이고 분산은 분산  
@@ -187,8 +188,8 @@ x축은 정규분포를 따르는 잔차의 확률변수이고 y축은 잔차값
 직선에 가까울 수록 오차의 정규성을 만족한다는 점은 동일하다.
 <br>  
 번외)확률 밀도 함수의 적분 값은 대상의 분율을 의미한다.  
-x값은 35이고 여기까지 색칠된 면적이 40이면 순서대로 줄을 세웠을 때 전체의 40%가   35이하라는 의미이다. 
-![참고](https://medistat.tistory.com/24) 참조 추천링크
+x값은 35이고 여기까지 색칠된 면적이 40이면 순서대로 줄을 세웠을 때 전체의 40%가   35이하라는 의미이다.  
+[medistat](https://medistat.tistory.com/24) 참조 추천링크
 <br>  
 참고 출처:  
 https://zephyrus1111.tistory.com/54
