@@ -38,11 +38,11 @@ $E(Y|x_1)= E(Y|x_2)=... E(Y|x_k)$
 <br>  
 해당가설을 검증하기 위해 모집단으로부터 무작위 표본을 추출해 표본에 속한 개체들을  
 대상으로 변수 X와 Y를 측정해 정리하면 관측치 X값을 기준으로 j번째 집단에 속한  
-i번째 개체의 Y 관측치![식0_3](https://latex.codecogs.com/svg.image?Y_{ji}&space;)가 나올 것이다.  
-한 관측치의 Y값![식0_4](https://latex.codecogs.com/svg.image?Y_{ji})와 Y의 총평균![식0_5](https://latex.codecogs.com/svg.image?\overline{y}) 사이의 차이인 총편차![식0_6](https://latex.codecogs.com/svg.image?Y_{ji}-\overline{y})는  
-그 개체가 속한 집단의 Y값 평균![식0_7](https://latex.codecogs.com/svg.image?\widehat{y}_i&space;)과 총평균![식0_8](https://latex.codecogs.com/svg.image?\overline{y}) 사이의 차이인  
-회귀편차(분산분석의 표본간편차에 해당)에 그 개체의 Y값![식0_9](https://latex.codecogs.com/svg.image?Y_{ji})과 자신이 속한 집단의 Y값  
-평균![식0_10](https://latex.codecogs.com/svg.image?\widehat{y}_i&space;) 사이의 차이인 오차(잔차, 분산분석의 표본내편차에 해당)를 더한  
+i번째 개체의 Y 관측치![식03](https://latex.codecogs.com/svg.image?Y_{ji}&space;)가 나올 것이다.  
+한 관측치의 Y값![식4](https://latex.codecogs.com/svg.image?Y_{ji})와 Y의 총평균![식5](https://latex.codecogs.com/svg.image?\overline{y}) 사이의 차이인 총편차![식6](https://latex.codecogs.com/svg.image?Y_{ji}-\overline{y})는  
+그 개체가 속한 집단의 Y값 평균![식7](https://latex.codecogs.com/svg.image?\widehat{y}_i&space;)과 총평균![식8](https://latex.codecogs.com/svg.image?\overline{y}) 사이의 차이인  
+회귀편차(분산분석의 표본간편차에 해당)에 그 개체의 Y값![식9](https://latex.codecogs.com/svg.image?Y_{ji})과 자신이 속한 집단의 Y값  
+평균![식10](https://latex.codecogs.com/svg.image?\widehat{y}_i&space;) 사이의 차이인 오차(잔차, 분산분석의 표본내편차에 해당)를 더한  
 값과 같다.  
 총편차는 회귀편차와 오차로 분해된다.
 <br>  
