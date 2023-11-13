@@ -8,14 +8,15 @@ use_math: true
 # 비전공자를 위한 통계방법론    
 > 모집단 및 표본의 회귀모형과 회귀방정식    
 
-회귀분석에서 관심을 가지는 모수는 모집단에서 X와 Y간 관계의 성격을 규정해주는 회귀계수$\beta_$이다.  
-  
+회귀분석에서 관심을 가지는 모수는 모집단에서 X와 Y간 관계의 성격을 규정해주는 회귀계수 ![식1](https://latex.codecogs.com/svg.image?\beta_{1})이다.
+<br>  
 모집단과 표본의 단순회귀모형과 회귀방정식   
-모집단 회귀모형: $Y_i = \beta_0 + \beta_1 X_1 + epsilon_i$  
+모집단 회귀모형: $Y_i = \beta_0 + \beta_1 X_1 + \epsilon_i$  
 모집단 회귀식: $\widehat{Y}_i = \beta_0 + \beta_1 X_1$  
 표본 회귀모형: $Y_i = b_0 + b_1 X_1 + \epsilon_i$  
-표본 회귀식: $\widehat{Y}_i = b_0 + b_1 X_1$  
-  
+표본 회귀식: $\widehat{Y}_i = b_0 + b_1 X_1$
+<br>  
+
 > 모집단 모수의 추정  
 
 표본회귀계수 $b_0, b_1$의 표본분포는 정규분포의 특성을 갖는다.  
@@ -23,25 +24,27 @@ use_math: true
 표본오차를 확인해야 한다.  
 표본오차를 알아야 일정한 신뢰수준에서 모집단 모수가 취할 것으로 예상되는 신뢰구간을  
 추정할 수 있고 가설검증에 필요한 검증통계량을 계산해 대립가설의 진위여부를 판단하는  
-검증과정을 수행할 수 있기 때문이다.  
-  
+검증과정을 수행할 수 있기 때문이다.
+<br>  
 단순회귀분석에서의 표본회귀계수 $b_1$의 이론적 표본오차  
 $SE=\sqrt{\frac{\sigma^2}{\sum (x_i - \overline{x})^2}}$   
-다만 표본회귀계수의 이론적 표본오차 공식 속에 있는 모집단 통계량$\sigma^$을 알 수  
+다만 표본회귀계수의 이론적 표본오차 공식 속에 있는 모집단 통계량![식2](https://latex.codecogs.com/svg.image?\sigma^2&space;)을 알 수  
 없어 불편추정치인 표본통계치로 대체한다. 따라서 표본통계량을 표준화한 검증통계량의  
 확률분포는 표준정규분포가 아닌 t분포(자유도 n-2)의 특성을 띄게 된다.  
 이 때 표본크기 n에서 잃어버린 자유도의 수 2는 회귀계수$\beta_0, \beta_1$의 수  
 즉 독립변수 X의 수에 1을 더한 수가 된다.  
 따라서 모집단 모집단 모수 $\beta_1$에 대한 통계적 추정은 t분포상에서 이뤄진다. 
-$t = \frac{b_1-\beta_1}{SE}$  
-  
+$t = \frac{b_1-\beta_1}{SE}$
+<br>  
+
 > 모집단 회귀계수$\beta_1$의 추정  
 
 모집단 회귀계수 $\beta_1$의 점추정량은 표본회귀계수 $b_1$이고 이것이 점추정치가 된다.  
 모집단 회귀계수의 구간추정량은 표본분포가 좌우대칭인 t분포를 따를 경우 일정한  
 신뢰수준 $100\cdot(1-\alpha)$%에서 모집단 모수의 신뢰구간은 점추정치 $\pm t_{\alpha/2}\cdot SE$에 의해 계산된다.  
-$ b_1 - t_{\alpha/2,n-2}\cdot SE \leq \beta_1\leq b_1 + t_{\alpha/2,n-2}\cdot SE $  
-  
+$ b_1 - t_{\alpha/2,n-2}\cdot SE \leq \beta_1\leq b_1 + t_{\alpha/2,n-2}\cdot SE $
+<br>  
+
 > 가설검증  
 
 -양측검증  
@@ -49,16 +52,17 @@ ex)지능은 학업성취도에 유미의한 영향을 미칠 것이다.
 $\widehat{Y}_i = \beta_0 + \beta_1 \cdot X_i$  
 대립가설: $\beta_1$은 0이 아닐 것이다.  
 검증통계치가 왼쪽 경계값 이하거나 오른쪽 경계값 이상의 값이라면 귀무가설을 기각하고  
-대립가설을 채택한다.  
-  
+대립가설을 채택한다.
+<br>    
 -단측검증  
 ex)지능이 높을수록 학업성취도가 높을 것이다.  
 대립가설: (우측검증)$\beta_1 >0$  
-검증통계치가 $t_{\alpha, n-2}$값 이상이면 귀무가설을 기각하고 대립가설을 채택한다.  
-  
+검증통계치가 $t_{\alpha, n-2}$값 이상이면 귀무가설을 기각하고 대립가설을 채택한다.
+<br>  
 좌측검증일 경우 기각영역 경계값은 $-t_{\alpha, n-2}$가 되고 기각영역 경계값 이하라면  
-귀무가설을 기각하고 대립가설을 채택한다.  
-  
+귀무가설을 기각하고 대립가설을 채택한다.
+<br>  
+
 > 모집단의 Y값 예측과 예측구간 추정  
 
 일상에서 Y값을 예측하기 위해 사용할 수 있는 회귀방정식이 모집단 회귀방정식  
@@ -71,12 +75,12 @@ $b_1$또한 중심값이 $\beta_1$인 표본분포에서 무작위로 뽑힌 하
 따라서 표본회귀방정식을 활용해 구한 예측치 $\widehat{y}$로 모집단 회귀방정식에서  
 구할 수 있는 예측치 $\widehat{Y}$와 같을 수는 없다.  
 다만 표본회귀계수 $b_0, b_1$는 모집단 회귀계수 $\beta_0, \beta_1$의 불편추정량이기  
-때문에 표본 예측치도 모집단 예측치의 불편추정량이 된다.  
-  
+때문에 표본 예측치도 모집단 예측치의 불편추정량이 된다.
+<br>    
 표본회귀방정식의 예측치 $\widehat{y}$로 추정하고자 하는 것은 두가지이다.  
 **특정한 X값 $x_0$이 주어졌을 때 모집단에 속한 개체들 중에서 동일한 $x_0$를 갖는**  
-**개체들의 Y값들의 평균 $\widehat{Y}$과 동일한 $x_0$을 갖는 특정 개체의 $Y_i$값이다.**  
-  
+**개체들의 Y값들의 평균 $\widehat{Y}$과 동일한 $x_0$을 갖는 특정 개체의 $Y_i$값이다.**
+<br>  
 **표본예측치 $\widehat{y}$의 표본분포는 정규분포의 특성을 갖는다.**  
 표본오차는 다음과 같다.  
 $SE = \sqrt{\sigma^2 [\frac{1}{n}+\frac{(x_0-\overline{x})^2}{(x_i-\overline{x})^2}]}$  
@@ -86,15 +90,14 @@ $SE = \sqrt{\sigma^2 [\frac{1}{n}+\frac{(x_0-\overline{x})^2}{(x_i-\overline{x})
 이것의 불편추정치인 표본평균제곱합(MSE)를 사용해 계산한다.  
 따라서 표본예측치 $\widehat{y}$를 표준화한 검증통계량의 확률분포는 정규분포 대신  
 t분포(자유도 n-2)의 특성을 띈다.  
-$MSE = \frac{1}{n}\sum_{i=1}^{n}(Y_i - \widehat{Y}_i)^2$  
-$Y_i$는 관측값이고 $\widehat{Y}_i$는 예측값이다.  
-모집단 예측치 $\widehat{Y}$의 구간추정치(신뢰구간)  
-$\widehat{y}-t_{\alpha/2, n-2} \cdot SE \leq \widehat{Y} \leq  \widehat{y}+t_{\alpha/2, n-2} \cdot SE$  
-
+![식3](https://latex.codecogs.com/svg.image?MSE=\frac{1}{n}\sum_{i=1}^{n}(Y_i-\widehat{Y}_i)^2&space;)  
+![식4](https://latex.codecogs.com/svg.image?Y_i)는 관측값이고 ![식5](https://latex.codecogs.com/svg.image?\widehat{Y}_i&space;)는 예측값이다.  
+모집단 예측치 ![식6](https://latex.codecogs.com/svg.image?\widehat{Y}&space;)의 구간추정치(신뢰구간)  
+![식7](https://latex.codecogs.com/svg.image?\widehat{y}-t_{\alpha/2,n-2}\cdot&space;SE\leq\widehat{Y}\leq\widehat{y}&plus;t_{\alpha/2,n-2}\cdot&space;SE&space;)
+<br>  
 위에서 모집단 예측치의 구간추정치를 구했기 때문에 그 그룹에 속한 특정 개인의 $Y_i$값은  
 모집단 예측치 $\widehat{Y}$의 구간추정치에 동일한 $x_0$를 갖고 있는 개인들의 표준편차 
 동일한 $x_0$을 갖고 있는 개인들의 표준편차(오차의 표준편차로서 $\sqrt{MSE}$에 해당)에  
 따라 변할 수 있는 정도를 반영해주면 된다.  
-이를 통합해 신뢰수준 $100 \cdot (1-\alpha)%에서 특정 개체의 Y_i 구간추정량을 정리하면  
-다음과 같다.  
+이를 통합해 신뢰수준 $100 \cdot (1-\alpha)%에서 특정 개체의 Y_i 구간추정량을 정리하면 다음과 같다.  
 $\widehat{y}-t_{\alpha/2, n-2} \cdot (SE + \sqrt{MSE}) \leq \ Y_i \leq  \widehat{y}+t_{\alpha/2, n-2} \cdot (SE + \sqrt{MSE})SE$  
