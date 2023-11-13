@@ -11,7 +11,7 @@ use_math: true
 오차에 대한 가정  
 1. 특정한 X값 하에서 오차$\epsilon$의 기대값은 0이다.  
 $E(\epsilon|X_i)=0$  
-2. 확률변수 $epsilon$의 분산은 X의 값에 상관없이 동일하다.  
+2. 확률변수 $\epsilon$의 분산은 X의 값에 상관없이 동일하다.  
 $Var(\epsilon|X_i)=\sigma^2$  
 3.확률변수 $\epsilon$은 정규분포를 따른다.  
 $\epsilon~N(0,\sigma^2)$  
@@ -27,7 +27,7 @@ $Cor(\epsilon_i, \epsilon_j)=0$
 ![식2](https://latex.codecogs.com/svg.image?\beta_0&plus;\beta_{1}X_i)과 같다고 결론을 내릴 수 있는 근거이자 그렇게 결론을 내리기  
 위한 전제조건이다.  
 해당 가정이 전제되어야 특정한 X값이 주어진 상황에서 조건부 Y의 기대값은  
-$E(Y/X_i)=E(\beta_0+\beta_1 \cdot X_i + \epsilon_i)=\beta_0+\beta_1 \cdot X_i +E(\epsilon_i | X_i)=\beta_0+\beta_1 \cdot X_i$이 된다.  
+$E(Y|X_i)=E(\beta_0+\beta_1 \cdot X_i + \epsilon_i)=\beta_0+\beta_1 \cdot X_i +E(\epsilon_i | X_i)=\beta_0+\beta_1 \cdot X_i$이 된다.  
 이 가정하에 회귀방정식은 독립변수 X와 종속변수 Y의 조건부 기대값, 즉 E(Y|$X_i$)사이의 관계식이라 할 수 있다.
 <br>  
 2. 확률변수 $\epsilon$의 분산은 X의 값에 상관없이 동일하다.  
