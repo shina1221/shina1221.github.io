@@ -91,7 +91,7 @@ i번째 관측치의 오차 $\epsilon_i$와 j번째 관측치의 오차 $\epsilo
 <br>  
 참고 정리 목록  
 [zephyrus1111](https://zephyrus1111.tistory.com/54)  
-[deep-learning-study]https://deep-learning-study.tistory.com/271  
+[deep-learning-study](https://deep-learning-study.tistory.com/271)  
 [참고](https://www.google.com/search?q=%EC%A0%95%EA%B7%9C%EB%B6%84%ED%8F%AC+%ED%8F%89%EA%B7%A0%EC%9D%B4+0%EC%9D%B4%EA%B3%A0+%EB%B6%84%EC%82%B0%EC%9D%B4&rlz=1C1CAFA_enKR779KR779&oq=%EC%A0%95%EA%B7%9C%EB%B6%84%ED%8F%AC+%ED%8F%89%EA%B7%A0%EC%9D%B4+0%EC%9D%B4%EA%B3%A0+%EB%B6%84%EC%82%B0%EC%9D%B4+&aqs=chrome..69i57j33i160l2.7286j0j7&sourceid=chrome&ie=UTF-8)
 <br>  
 
