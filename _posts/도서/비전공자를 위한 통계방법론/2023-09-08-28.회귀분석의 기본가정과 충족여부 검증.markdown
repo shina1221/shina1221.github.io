@@ -33,7 +33,7 @@ $E(Y|X_i)=E(\beta_0+\beta_1 \cdot X_i + \epsilon_i)=\beta_0+\beta_1 \cdot X_i +E
 2. 확률변수 $\epsilon$의 분산은 X의 값에 상관없이 동일하다.  
 등분산 가정이라고 한다. 이는 회귀분석을 분산분석을 틀로 볼 수 있는 근거가 된다.
 <br>  
-3.확률변수 $\epsilon$은 정규분포를 따른다.  
+3. 확률변수 $\epsilon$은 정규분포를 따른다.  
 확률변수 $\epsilon_i$의 확률분포가 정규분포의 특성을 갖는다는 것이다.  
 이 가정은 $\epsilon_i$와 선형관계에 있는 종속변수 Y도 정규분포를 따르는 확률변수임을  
 시사한다. 또한 회귀모형 $\widehat{Y}_i = \beta_0 + \beta_1 \cdot X_i + \epsilon_i$에서  
