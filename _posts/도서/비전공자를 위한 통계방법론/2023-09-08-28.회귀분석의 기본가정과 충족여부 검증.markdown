@@ -89,9 +89,10 @@ i번째 관측치의 오차 $\epsilon_i$와 j번째 관측치의 오차 $\epsilo
 아웃라이어라고 의심해볼 수 있다.  
 ![스튜던트 잔차도표와 아웃라이어](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EB%8F%84%EC%84%9C/%EB%B9%84%EC%A0%84%EA%B3%B5%EC%9E%90%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%ED%86%B5%EA%B3%84%EB%B0%A9%EB%B2%95%EB%A1%A0/img/%EC%8A%A4%ED%8A%9C%EB%8D%98%ED%8A%B8%20%EC%9E%94%EC%B0%A8%EB%8F%84%ED%91%9C%EC%99%80%20%EC%95%84%EC%9B%83%EB%9D%BC%EC%9D%B4%EC%96%B4.jpg)
 <br>  
-https://zephyrus1111.tistory.com/54 참고해서 정리 
-https://deep-learning-study.tistory.com/271
-https://www.google.com/search?q=%EC%A0%95%EA%B7%9C%EB%B6%84%ED%8F%AC+%ED%8F%89%EA%B7%A0%EC%9D%B4+0%EC%9D%B4%EA%B3%A0+%EB%B6%84%EC%82%B0%EC%9D%B4&rlz=1C1CAFA_enKR779KR779&oq=%EC%A0%95%EA%B7%9C%EB%B6%84%ED%8F%AC+%ED%8F%89%EA%B7%A0%EC%9D%B4+0%EC%9D%B4%EA%B3%A0+%EB%B6%84%EC%82%B0%EC%9D%B4+&aqs=chrome..69i57j33i160l2.7286j0j7&sourceid=chrome&ie=UTF-8
+참고 정리 목록  
+[zephyrus1111](https://zephyrus1111.tistory.com/54)  
+[deep-learning-study]https://deep-learning-study.tistory.com/271  
+[참고](https://www.google.com/search?q=%EC%A0%95%EA%B7%9C%EB%B6%84%ED%8F%AC+%ED%8F%89%EA%B7%A0%EC%9D%B4+0%EC%9D%B4%EA%B3%A0+%EB%B6%84%EC%82%B0%EC%9D%B4&rlz=1C1CAFA_enKR779KR779&oq=%EC%A0%95%EA%B7%9C%EB%B6%84%ED%8F%AC+%ED%8F%89%EA%B7%A0%EC%9D%B4+0%EC%9D%B4%EA%B3%A0+%EB%B6%84%EC%82%B0%EC%9D%B4+&aqs=chrome..69i57j33i160l2.7286j0j7&sourceid=chrome&ie=UTF-8)
 <br>  
 
 > 변수변환  
