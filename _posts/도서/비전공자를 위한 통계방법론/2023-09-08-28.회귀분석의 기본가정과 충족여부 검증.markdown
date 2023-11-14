@@ -164,7 +164,7 @@ y축은 잔차![식2](https://latex.codecogs.com/svg.image?e_i(y-\overline{y})/R
 -2나 2를 벗어나는 경우 이상치로 판단한다.
 <br>  
 두번째로 **오차의 등분산성**을 확인한다.  
-**오차의 등분산성 가정을 위배하지 않음을 확인하기 위함이다.**
+**오차의 등분산성 가정을 위배하지 않음을 확인하기 위함이다.**  
 y축은 앞서 구한 잔차![식3](https://latex.codecogs.com/svg.image?e_i(y-\overline{y})/RMSE(\sqrt{\frac{1}{n}\sum_{i}^{n}(\widehat{y}_i-y_i)^2}))값을 절댓값으로 씌운 값을 두고 x축에는 독립변수를 둔다.  
 여기서도 잔차의 절대값이 특정 패턴을 보이는지를 확인한다.  
 [zephyrus1111](https://zephyrus1111.tistory.com/54#c1)
@@ -176,11 +176,12 @@ y축은 앞서 구한 잔차![식3](https://latex.codecogs.com/svg.image?e_i(y-\
 일직선 형태로 나오는 그림이 정규성 가정을 위배하지 않는것이다.  
 k는 잔차의 순위를 의미한다.    
 $\sqrt{MSE}\times z((k-0.375)/(n+0.25))$를 통해 잔차 이론값을 구한다. 
-#z-나 n+뒤에 오는 값은 바뀔 수 있다. 현재 식은 R에서 n의 수가 10이하일 때 기준인  
-Blom방법이다. R에선 11개부터는 rankit($z(\frac{(k-\frac{1}{2})}{n})$)의 방법을 쓴다.
+#z-나 n+뒤에 오는 값은 바뀔 수 있다.  
+현재 식은 R에서 n의 수가 10이하일 때 기준인 Blom방법이다.  
+R에선 11개부터는 rankit($z(\frac{(k-\frac{1}{2})}{n})$)의 방법을 쓴다.
 <br>  
-x축은 정규분포를 따르는 잔차의 확률변수이고 y축은 잔차값이다. 
-![위키피디아](https://en.wikipedia.org/wiki/Q%E2%80%93Q_plot)  
+x축은 정규분포를 따르는 잔차의 확률변수이고 y축은 잔차값이다.  
+[위키피디아](https://en.wikipedia.org/wiki/Q%E2%80%93Q_plot)  
 이렇게 구하기 힘들다면  
 **scipy.stats의 probplot을 활용해 구할 수 있다.**  
 위의 qqplot과 probplot으로 구한 그림은 다른데 qqplot은 평균이 0이고 분산은 분산  
