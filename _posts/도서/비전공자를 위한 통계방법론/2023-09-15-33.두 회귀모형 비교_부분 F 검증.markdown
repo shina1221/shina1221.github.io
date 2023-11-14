@@ -24,15 +24,15 @@ use_math: true
 =제한회귀모형하에서의 회귀제곱합(SSR)이 완전화귀모형하에서 유의미한 정도로 증가하는지  
 유무를 보는 것(오차제곱합이 증가하면 그만큼 회귀제곱합이 줄어드는 반비례 관계이기 때문이다.)  
 참고  
-$\sum_{i=1}^{n}(y_i-\overline{y})^2=\sum_{i=1}^{n}(\widehat{y}_i-\overline{y})^2+\sum_{i=1}^{n}(y_i-\widehat{y}_i)^2$  
+![식1](https://latex.codecogs.com/svg.image?\sum_{i=1}^{n}(y_i-\overline{y})^2=\sum_{i=1}^{n}(\widehat{y}_i-\overline{y})^2&plus;\sum_{i=1}^{n}(y_i-\widehat{y}_i)^2)  
 총제곱합(SST) = 회귀제곱합(SSR) + 오차제곱합(SSE)
 <br>  
 검정통계량  
-$\Delta F = \frac{(SSR_F-SSR_R)/(df_F-df_R)}{SSE_F/(n-k-1)}=\frac{\Delta MSR}{MES_F}$  
-완전회귀모형의 회귀제곱합 $SSR_F$  
-제한회귀모형의 회귀제곱합 $SSR_R$  
-두 모형사이의 자유도 차이 $df_F-df_R$  
-회귀평균제곱합 증가분 $\Delta MSR$  
+![식2](https://latex.codecogs.com/svg.image?\Delta&space;F=\frac{(SSR_F-SSR_R)/(df_F-df_R)}{SSE_F/(n-k-1)}=\frac{\Delta&space;MSR}{MES_F})  
+완전회귀모형의 회귀제곱합 ![식3](https://latex.codecogs.com/svg.image?SSR_F)  
+제한회귀모형의 회귀제곱합 ![식4](https://latex.codecogs.com/svg.image?SSR_R)  
+두 모형사이의 자유도 차이 ![식5](https://latex.codecogs.com/svg.image?df_F-df_R)  
+회귀평균제곱합 증가분 ![식6](https://latex.codecogs.com/svg.image?\Delta&space;MSR)  
 완전회귀모형의 오차제곱합 SSE  
 오차평균제곱합 MSE  
 하점자 F는 완전회귀모형을, R은 제한회귀모형을 가리킨다.  
