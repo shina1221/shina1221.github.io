@@ -18,7 +18,7 @@ $\widehat{Y}=b_0+b_1X_1+b_2X_2+...+b_kX_k+b_1X_1+b_2X_2$
 1차 산업에 속한 개체들 $I_1=1, I_2=0$의 Y값 평균$\widehat{Y}$  
 $\widehat{Y}=b_0+b_1X_1+b_2X_2+...+b_kX_k+b_p$  
 2차 산업에 속한 개체들 $I_1=0, I_2=1$의 Y값 평균$\widehat{Y}$  
-$\widehat{Y}=b_0+b_1X_1+b_2X_2+...+b_kX_k+b_q$
+$\widehat{Y}=b_0+b_1X_1+b_2X_2+...+b_kX_k+b_q$  
 3차 산업에 속한 개체들 $I_1=0, I_2=0$의 Y값 평균$\widehat{Y}$  
 $\widehat{Y}=b_0+b_1X_1+b_2X_2+...+b_kX_k$  
 $b_q$는 독립변수 $I_1$의 회귀계수이다. 이는 1차 산업 더미변수의 회귀계수 $b_p$가 1차 산업에  
