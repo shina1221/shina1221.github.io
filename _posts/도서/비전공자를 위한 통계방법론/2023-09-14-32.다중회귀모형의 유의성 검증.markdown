@@ -14,11 +14,11 @@ use_math: true
 일반적으로 결정계수 $R^2$값은 독립변수의 개수가 증가하는 자체만으로도 일정 정도 증가한다. 왜냐하면 **독립변수의 수가 증가함에 따라 오차제곱합(SSE)가 일정 부분 감소하는 대신 그만큼**  
 **회귀제곱합(SSR)이 증가하기 때문이다.**
 <br>  
-$\sum_{i=1}^{n}(y_i-\overline{y})^2=\sum_{i=1}^{n}(\widehat{y}_i-\overline{y})^2+\sum_{i=1}^{n}(y_i-\widehat{y}_i)^2$  
+![식1](https://latex.codecogs.com/svg.image?\sum_{i=1}^{n}(y_i-\overline{y})^2=\sum_{i=1}^{n}(\widehat{y}_i-\overline{y})^2&plus;\sum_{i=1}^{n}(y_i-\widehat{y}_i)^2)  
 총제곱합(SST) = 회귀제곱합(SSR) + 오차제곱합(SSE)  
-$R^2 = \frac{SSR}{SST}, (0\leq R^2 \leq1)$
+![식2](https://latex.codecogs.com/svg.image?R^2=\frac{SSR}{SST},(0\leq&space;R^2\leq1))
 <br>  
-따라서 $R^2$값 자체만 보고 회귀모형의 설명력을 판단하기보다 해당 $R^2$값이 몇 개의  
+따라서 ![식3](https://latex.codecogs.com/svg.image?R^2)값 자체만 보고 회귀모형의 설명력을 판단하기보다 해당 ![식4](https://latex.codecogs.com/svg.image?R^2)값이 몇 개의  
 독립변수들을 투입해 나온 값인지 살펴봐야 한다.
 <br>  
 ex) 독립변수 2개만 포함시킨 회귀모형의 결정계수와 독립변수 4개만 포함시킨 회귀모형의  
