@@ -120,7 +120,7 @@ ex) 모바일 앱 품질요인이 사용자 재이용의도에 미치는 영향
 1번과 3번에서 나오는 비표준화 계수 중 B값과 표준오차를 통해 산출한다.
 <br>  
 이를 소벨테스트를 수행해 나온 값이 +1.96보다 크거나 -1.96보다 작으면 매개효과가 유의하다고 본다.  
-![소벨테스트 링크]​(https://www.danielsoper.com/statcalc/calculator.aspx?id=31)  
+[소벨테스트 링크]​(https://www.danielsoper.com/statcalc/calculator.aspx?id=31)  
 
 > 조절변수
 
