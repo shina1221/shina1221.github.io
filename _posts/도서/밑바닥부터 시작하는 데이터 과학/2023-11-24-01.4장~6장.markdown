@@ -105,6 +105,7 @@ P(D|T)는 0.98%가 된다.
 *정규분포  
 평균인 $\mu$뮤와 $\sigma$시그마의 두 파라미터로 정의되는 종형 곡선 모양 분포이다.  
 정규분포의 밀도함수  
+[정규분포의 확률밀도함수 참조링크](https://www.youtube.com/watch?v=sFMjrnI93b4)  
 $f(x|\mu,\sigma)=\frac{1}{\sigma\sqrt{2\pi}}exp(\frac{(x-\mu)^2}{2\sigma^2})$  
 *표준정규분포  
 *$\mu$는 분포의 가운데로 모평균을 의미하고, $\sigma$는 표준편차로 분포의 퍼짐 정도를 의미한다.  
