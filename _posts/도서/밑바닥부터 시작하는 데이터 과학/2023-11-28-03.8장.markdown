@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 8장
-date: 2023-11-24 19:20:23 +0900
+date: 2023-11-28 19:20:23 +0900
 category: ML 
 use_math: true
 ---
