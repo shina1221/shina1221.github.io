@@ -164,6 +164,11 @@ regularization같은 변수의 개수가 늘어날수록 해당 모델을 불리
 사람이 결과를 알아보기 편하다.  
 다만 차원축소는 원본데이터를 축소하는 과정에서 정보를 일부 없애게 된다.  
 어떤 목적을 두고 어떤 정보를 얼마나 없애면 좋을지에 대한 고민의 결과가 차원축소 방법이다.  
+*차원의 저주  
+[참고 링크2](https://kkokkilkon.tistory.com/127)  
+충분히 공간을 표현할만큼 큰 데이터 수지없이, 적은 데이터로만 해당 공간을 표현하는 경우  
+과적합이 발생할 수 있다.  
+[참고 링크](https://todayisbetterthanyesterday.tistory.com/15?category=822147)
 <br>  
 1.feature selection  
 forward search, backward search  
