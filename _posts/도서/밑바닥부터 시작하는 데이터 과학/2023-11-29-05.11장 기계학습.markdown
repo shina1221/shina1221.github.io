@@ -194,3 +194,4 @@ forward search에 비해 backward search는 전체집합부터 제외하면서 �
 https://opentutorials.org/module/3653/22071  
 https://opentutorials.org/module/3653/22994  
 https://medium.com/@ivanreznikov/stop-using-the-same-image-in-bias-variance-trade-off-explanation-691997a94a54  
+https://tobigs.gitbook.io/tobigs/data-analysis/undefined-2/python-2-4  
