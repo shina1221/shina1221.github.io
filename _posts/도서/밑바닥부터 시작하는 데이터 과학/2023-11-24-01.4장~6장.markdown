@@ -64,6 +64,7 @@ ex) 사용자를 대상으로 몰래 실험을 진행했을 때
 
 베이즈 정리  
 사건 F가 발생했다는 가정하에 사건 E가 발생할 확률  
+![참고수식](https://t1.daumcdn.net/cfile/tistory/999D963B5C09307125)  
 $P(E|F)=P(E,F)/P(F)=P(F|E)P(E)/P(F)$
 <br>  
 $P(F)=P(F,E),P(F,!F)$  
