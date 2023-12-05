@@ -45,6 +45,10 @@ knn은 차원의 저주라는 것 때문에 고차원에서 문제가 생긴다.
 <br>  
 [추가참고 knn을 통한 파라미터 튜닝](https://tobigs.gitbook.io/tobigs/data-analysis/python-knn)
 <br>  
+*최소거리: 두 지점 혹은 개체간의 가장 짧은 거리로 유클리드 거리나 다른 거리측정 기준을 사용해 계산된다.  
+*평균거리: 여러 지점 또는 개체간의 평균적인 거리를 의미한다. 이는 데이터 집합의  
+모든 거리를 합산한 뒤 전체 개수로 나눠 계산된다.  
+
 참고출처:  
 https://opentutorials.org/module/3653/22071  
 https://opentutorials.org/module/3653/22994  
