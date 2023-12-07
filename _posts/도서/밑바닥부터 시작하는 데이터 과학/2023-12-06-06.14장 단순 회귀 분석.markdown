@@ -89,7 +89,6 @@ $f(\alpha,\beta|x_i,y_i,\sigma)=\frac{1}{\sqrt{2\pi}\sigma} exp(-(y_i-\alpha-\be
 그리고 오류의 제곱값을 최소화하는 알파와 베타가 계싼되는 지점이 likelihood가 최대화되는 지점이다.  
 이런 가정을 따르면 오류의 제곱값을 최소화하는 것은 관측된 데이터가 발생할 likelihood를 최대화하는 것과 동일하다.  
 
-
 참고출처:  
 https://ko.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/variance-standard-deviation-population/a/calculating-standard-deviation-step-by-step  
 https://blog.naver.com/qtdbsdk/220018979312  
