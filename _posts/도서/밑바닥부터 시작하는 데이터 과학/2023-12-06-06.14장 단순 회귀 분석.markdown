@@ -15,7 +15,7 @@ use_math: true
 ![식4](https://latex.codecogs.com/svg.image?\epsilon_i)는 모델이 고려하지 못하는 다른 요소 때문에 발생하는 오류  
 ![식5](https://latex.codecogs.com/svg.image?\epsilon^2)은 오차항의 분산이다.
 <br>  
-알파값과 베타값이 구해졌다고 할 때, 입력 변수 ![식]6(https://latex.codecogs.com/svg.image?X_i)에 따라서 결과를 예측할 수 있다.  
+알파값과 베타값이 구해졌다고 할 때, 입력 변수 ![식6](https://latex.codecogs.com/svg.image?X_i)에 따라서 결과를 예측할 수 있다.  
 실제값인 ![식7](https://latex.codecogs.com/svg.image?y_i)가 있을 때 오류(실제값-예측값)를 구할 수 있다.
 <br>  
 알고자 하는 것은 데이터 전체에서 발생하는 총 오류값이다.  
@@ -23,7 +23,7 @@ use_math: true
 만약 ![식8](https://latex.codecogs.com/svg.image?x_1)(1번째 x)의 예측값이 너무 높고 ![식9](https://latex.codecogs.com/svg.image?x_2)(2번째 x)의 예측값이 너무 낮다면 오류값이 상쇄되기 때문이다.  
 대신 오류의 제곱값을 더해줘야 한다.
 <br>  
-*최소자승법: sum of squared errors(sse ![식11](https://latex.codecogs.com/svg.image?[SSE = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2]))를  
+*최소자승법: sum of squared errors(![식11](https://latex.codecogs.com/svg.image?[SSE = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2]))를  
 최소화해 주는 알파와 베타값을 찾는 것이다.  
 미분을 사용하면 오류를 최소화하는 알파와 베타를 찾을 수 있다.
 <br>  
@@ -31,8 +31,8 @@ x와 y가 학습데이터로 주어졌을 때 오류의 제곱값을 최소화�
 베타(회귀식의 기울기, 회귀계수))**beta = correlation(x,y) * standard_deviation(y) / standart_deviation(x)**  
 **![식13](https://latex.codecogs.com/svg.image?\beta = \frac{\sum_{i=1}^{n}(x_i-\overline{x})(y_i-\overline{y})}{\sum_{i=1}^{n}(x_i-\overline{x})^2})**  
 알파(회귀식의 절편))**alpha = mean(y) - beta * mean(x)**  
-식)$![식14](https://latex.codecogs.com/svg.image?y_i = \beta_x_i*\alpha+\epsilon_i)  
-잔차(오차))**![식15](https://latex.codecogs.com/svg.image?)$\epsilon_i=Y_i-\hat{Y}=Y_i-\beta*X_i-\alpha$**  
+식)$![식14](https://latex.codecogs.com/svg.image?y_i = \beta x_i*\alpha+\epsilon_i)  
+잔차(오차))**![식15](https://latex.codecogs.com/svg.image?\epsilon_i=Y_i-\hat{Y}=Y_i-\beta*X_i-\alpha)**  
 오차항의 분산을 잔차의 표본분산으로 추정한다.  
 독립변수 x의 평균이 주어지면, 알파(회귀식의 절편)는 종속변수 y의 평균을 예측해 준다.  
 베타(회귀계수, 회귀식의 기울기)는 입력변수가 standard_deviation(x)만큼 증가한다면 예측값도 correlation(x,y)*standard_deviation(y)만큼 증가한다는 것을 의미한다.  
