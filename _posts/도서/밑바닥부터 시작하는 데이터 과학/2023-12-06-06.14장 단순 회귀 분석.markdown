@@ -35,7 +35,7 @@ x와 y가 학습데이터로 주어졌을 때 오류의 제곱값을 최소화�
 잔차(오차))**![식15](https://latex.codecogs.com/svg.image?\epsilon_i=Y_i-\hat{Y}=Y_i-\beta*X_i-\alpha)**  
 오차항의 분산을 잔차의 표본분산으로 추정한다.  
 독립변수 x의 평균이 주어지면, 알파(회귀식의 절편)는 종속변수 y의 평균을 예측해 준다.  
-베타(회귀계수, 회귀식의 기울기)는 입력변수가 standard_deviation(x)만큼 증가한다면 예측값도 correlation(x,y)*standard_deviation(y)만큼 증가한다는 것을 의미한다.  
+베타(회귀계수, 회귀식의 기울기)는 입력변수가 standard_deviation(x)만큼 증가한다면 예측값도 correlation(x,y) * standard_deviation(y)만큼 증가한다는 것을 의미한다.  
 상관계수 공식)![상관계수 공식](https://itwiki.kr/images/4/4f/%ED%94%BC%EC%96%B4%EC%8A%A8_%EC%83%81%EA%B4%80%EA%B4%80%EA%B3%84.png)  
 표본 표준편차 공식) $\sqrt{\frac{\sum |x-\mu|^2}{n-1}}$  
 만약 x와 y가 완벽한 양의 상관관계를 지닌다면, x가 1표준편차 만큼 증가할 때마다 
