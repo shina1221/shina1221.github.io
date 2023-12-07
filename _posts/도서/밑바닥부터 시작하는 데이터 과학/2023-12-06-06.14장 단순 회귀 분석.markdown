@@ -9,7 +9,7 @@ use_math: true
 
 > 모델
 
-$y_i = \beta x_i*\alpha+\epsilon_{i}$  
+$y_i = \beta x_{i}*\alpha+\epsilon_{i}$  
 $y_i$는 사용자 i가 매일 사이트에서 보내는 시간(분)  
 $x_i$는 사용자 i의 친구 수  
 $\epsilon_i$는 모델이 고려하지 못하는 다른 요소 때문에 발생하는 오류  
