@@ -31,7 +31,7 @@ x와 y가 학습데이터로 주어졌을 때 오류의 제곱값을 최소화�
 베타(회귀식의 기울기, 회귀계수))**beta = correlation(x,y) * standard_deviation(y) / standart_deviation(x)**  
 **![식13](https://latex.codecogs.com/svg.image?\beta = \frac{\sum_{i=1}^{n}(x_i-\overline{x})(y_i-\overline{y})}{\sum_{i=1}^{n}(x_i-\overline{x})^2})**  
 알파(회귀식의 절편))**alpha = mean(y) - beta * mean(x)**  
-식)$![식14](https://latex.codecogs.com/svg.image?y_i = \beta x_i*\alpha+\epsilon_i)  
+식)![식14](https://latex.codecogs.com/svg.image?y_i = \beta x_i*\alpha+\epsilon_i)  
 잔차(오차))**![식15](https://latex.codecogs.com/svg.image?\epsilon_i=Y_i-\hat{Y}=Y_i-\beta*X_i-\alpha)**  
 오차항의 분산을 잔차의 표본분산으로 추정한다.  
 독립변수 x의 평균이 주어지면, 알파(회귀식의 절편)는 종속변수 y의 평균을 예측해 준다.  
