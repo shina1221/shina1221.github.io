@@ -1,0 +1,12 @@
+---
+layout: post
+title: 19장
+date: 2023-12-11 19:20:23 +0900
+category: ML 
+use_math: true
+---
+# 밑바닥부터 시작하는 데이터 과학  
+
+> 
+
+참고출처:  
