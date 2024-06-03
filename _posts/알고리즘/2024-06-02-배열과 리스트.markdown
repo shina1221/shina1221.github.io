@@ -59,7 +59,7 @@ for i in range(N):
 <br>  
 파이썬에서는 배열과 리스트를 구분하지 않지만 알아두도록 하자.  
 <br>   
-> 백준 온라인 저지 11720  
+> 백준 온라인 저지 ![11720](https://www.acmicpc.net/problem/11720)  
 
 ```python
 import sys
@@ -95,8 +95,11 @@ print(answer)
 <br>
 ![구간합 구하기 매커니즘](https://github.com/shina1221/shina1221.github.io/blob/7f145a5d0660bb8c973c60e94f124b815fbc98d1/_posts/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/img/%EA%B5%AC%EA%B0%84%ED%95%A9%20%EA%B5%AC%ED%95%98%EA%B8%B0.jpg)
 
-> 백준 온라인 저지 2750번) 수 정렬하기  
+> 백준 온라인 저지 ![11660번](https://www.acmicpc.net/problem/11660)   
 
+```python
+
+```
 시간제한이 2초이므로 4000만번 이하로 연산이 완료되어야 한다.  
   
 #input으로 받으면 연산량에 차이가 생긴다.  
