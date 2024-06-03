@@ -59,7 +59,7 @@ for i in range(N):
 <br>  
 파이썬에서는 배열과 리스트를 구분하지 않지만 알아두도록 하자.  
 <br>   
-> 백준 온라인 저지 ![11720](https://www.acmicpc.net/problem/11720)  
+> 백준 온라인 저지 [11720](https://www.acmicpc.net/problem/11720)  
 
 ```python
 import sys
@@ -94,15 +94,71 @@ print(answer)
                                  =15-0-3+0=12   
 <br>
 ![구간합 구하기 매커니즘](https://github.com/shina1221/shina1221.github.io/blob/7f145a5d0660bb8c973c60e94f124b815fbc98d1/_posts/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/img/%EA%B5%AC%EA%B0%84%ED%95%A9%20%EA%B5%AC%ED%95%98%EA%B8%B0.jpg)
+<br>
 
-> 백준 온라인 저지 ![11660번](https://www.acmicpc.net/problem/11660)   
+> 백준 온라인 저지 [11660번](https://www.acmicpc.net/problem/11660)   
 
 ```python
+matrix = []
+#input().strip().split() -> sys.stdin.readline().strip().split() 
+#N,M = map(int,sys.stdin.readline().strip().split())
+N,M = map(int,input().strip().split())
 
+for i in range(N+1):
+    if i==0:
+        #matrix[i]=[0]*(N+1)로 추가하면 리스트는 배열이 아니다. 
+        #인덱스가 없는 자료형이기 때문에 에러가 나므로 append해준다. 
+        matrix.append([0]*(N+1))
+    else:
+        #map함수는 map 객체로 나오므로 list처리를 하거나 변수에 할당해줄 필요가 있다. 
+        matrix.append(list(map(int, input().strip().split())))
+        matrix[i].insert(0,0) #0번째 자리에 0을 추가한다.
+
+#확인용        
+weighted_sum_matrix= matrix.copy()
+weighted_sum_matrix    
+
+#위에서 본 매커니즘을 적용한다. 
+#현재값+위쪽값+왼쪽값-왼쪽상단값
+for wi in range(1,N+1):
+    for wj in range(1,N+1):
+        weighted_sum_matrix[wi][wj]=weighted_sum_matrix[wi][wj]+weighted_sum_matrix[wi-1][wj]+weighted_sum_matrix[wi][wj-1]-weighted_sum_matrix[wi-1][wj-1] 
+
+weighted_sum_matrix= matrix.copy()
+weighted_sum_matrix    
+
+for j in range(M):
+    x1, y1, x2, y2 = map(int, input().strip().split())
+    answer = weighted_sum_matrix[x2][y2]-weighted_sum_matrix[x1-1][y2]-weighted_sum_matrix[x2][y1-1]+weighted_sum_matrix[x1-1][y1-1]
+    print(answer)
 ```
-시간제한이 2초이므로 4000만번 이하로 연산이 완료되어야 한다.  
-  
+시간제한이 1초이므로 2000만번 이하로 연산이 완료되어야 한다.  
+<br>  
 #input으로 받으면 연산량에 차이가 생긴다.  
 #sys.stdin.readline()  
-  
+<br>  
+```python
+import sys
+N,M = map(int,sys.stdin.readline().strip().split())
+matrix = []
+
+for i in range(N+1):
+    if i==0:
+        matrix.append([0]*(N+1))
+    else:
+        matrix.append(list(map(int, sys.stdin.readline().strip().split())))
+        matrix[i].insert(0,0) 
+            
+for wi in range(1,N+1):
+    for wj in range(1,N+1):
+        matrix[wi][wj]=matrix[wi][wj]+matrix[wi-1][wj]+matrix[wi][wj-1]-matrix[wi-1][wj-1] 
+        
+for j in range(M):
+    x1, y1, x2, y2 = map(int, sys.stdin.readline().strip().split())
+    answer = matrix[x2][y2]-matrix[x1-1][y2]-matrix[x2][y1-1]+matrix[x1-1][y1-1]
+    print(answer)
+```
+
+
+
 
