@@ -171,7 +171,7 @@ for j in range(M):
 5를 기준으로 1과 4, 2와 3을 더해 5를 만들 수 있지만 1과 4라는 케이스가 보이면 바로 다음으로 넘어간다.  
 최종적으로 3,4,5 3개가 좋은 수로 남는다.  
 <br>  
-
+#중요
 ```python
 import sys
 #input=sys.stdin.readline()
