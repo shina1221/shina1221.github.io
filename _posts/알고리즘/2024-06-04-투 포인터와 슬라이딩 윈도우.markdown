@@ -1,0 +1,138 @@
+---
+layout: post
+title: 배열과 리스트
+date: 2024-06-04 19:20:23 +0900
+category: Algorithm
+---
+> Do it! 알고리즘 코딩 테스트 
+
+<br>  
+투 포인터:2개의 포인터로 알고리즘의 시간 복잡도를 최적화  
+<br>  
+> 백준 온라인 저지 [11660번](https://www.acmicpc.net/problem/1253)   
+
+포인트: 정렬된 데이터에서 자기 자신을 좋은 수 만들기에 포함하면 안된다.  
+예시)1 2 3 4 5가 있을 때   
+1, 2의 경우 이를 기준으로 두개의 값을 더해서 만들 수 있는 경우가 없다.  
+3을 기준으로 1과 2를 더해 3을 만들 수 있다. (다음으로 넘어간다.)  
+4를 기준으로 1과 3을 더해 4를 만들 수 있다. (다음으로 넘어간다.)  
+5를 기준으로 1과 4, 2와 3을 더해 5를 만들 수 있지만 1과 4라는 케이스가 보이면 바로 다음으로 넘어간다.  
+최종적으로 3,4,5 3개가 좋은 수로 남는다.  
+<br>  
+#중요
+```python
+import sys
+#input=sys.stdin.readline()
+N= int(input())
+result = 0
+A= list(map(int,input().split()))
+A.sort()
+
+for k in range(N):
+    find = A[k]
+    i=0
+    j=N-1
+    #for문으로 작성하면 연산량이 얼마나 될 지 모르므로 while로 한다. 
+    while i<j: #투 포인터
+        if A[i]+A[j] == find: #좋은 수는 다른 두 수가 합쳐져서 좋은 수가 나왔을 때 
+            if i != k and j != k: #두 수 모두 좋은수가 포함되지 않았을 때  
+                result +=1
+                break
+            #포인트 (시간초과 잡기)
+            #두 합쳐지는 수 중에 좋은 수가 포함되어 있다면 포인터 이동 
+            elif i == k: #좋은 수 값을 포함하지 않게 한다.
+                i += 1 #왼쪽에서 오른쪽으로 (작은수에서 더 큰 수로)
+            elif j == k: #좋은 수 값을 포함하지 않게 한다.
+                j -=1 #오른쪽에서 왼쪽으로 (큰 수에서 더 작은 수로)
+        #좋은 수가 만들어지지 않았을 경우 계속해서 포인터 조정
+        elif A[i] + A[j] <find : #두 수를 합쳐도 좋은 수보다 작다면 
+            i+=1 #두 수 중에서 작은 수를 키운다. 
+        #좋은 수가 만들어지지 않았을 경우 계속해서 포인터 조정
+        else: #두 수를 합쳐서 좋은 수보다 크다면 
+            j -=1 #두 수 중에서 큰 수를 키운다. 
+```
+<br>  
+슬라이딩 윈도우 알고리즘: 2개의 포인터로 범위를 지정한 다음 범위(윈도우)를 유지한 채로 이동하며 문제를 해결  
+<br>  
+> 백준 온라인 저지 [최솟값 찾기1]](https://www.acmicpc.net/problem/11003)   
+
+일반적으로 최솟값을 찾기위해 **정렬을 하면 O(nlogn)의 시간 복잡도**를 가진다.  
+현 문제의 제한시간은 2.4초이다.  
+1초 2천만~1억번 -> 4.8만번 ~ 24만번  
+N의 최대 수는 5000000 -> 5000000log(50000000)  
+5000000log(5000000)= 5000000 * log(1000000)+log(5) =  5000000 * (log(10)^6 + 0.69897000433)  
+=5000000*6.69897  
+=33494850.0217  
+=3천3백5십만번 가량 연산  
+이는 24만번을 넘어가는 연산량이다.  
+따라서 정렬을 사용할 수 없으므로 O(n)의 시간복잡도로 해결해야 한다.  
+하지만 **슬라이딩 윈도우를 deque으로 구현해 정렬효과**를 볼 수 있다.  
+<br>
+앞쪽                      뒤쪽  
+appendleft()              append()  
+popleft()                 pop()  
+<br>  
+예시) 12 3  
+      1 5 2 3 6 2 3 7 3 5 2 6  
+[최솟값 찾기1 예시](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/img/%EC%B5%9C%EC%86%9F%EA%B0%92%20%EC%B0%BE%EA%B8%B01%20%EC%98%88%EC%8B%9C.jpg?raw=true)  
+<br>  
+
+for문  
+이중 for문  
+으로 이뤄진 코드가 있을 때  
+빅오 표기법은 O(N), O(N²)이 된다.  
+여기서 큰 차수인 O(N²)으로 빅오 표기법을 나타낸다.  
+
+```python
+from collections import deque
+N, L = map(int, input().split())
+mydeque = deque()
+now = list(map(int, input().split()))
+for i in range(N):
+    while mydeque and mydeque[-1][0] > now[i]:
+        mydeque.pop()
+    mydeque.append((now[i],i))
+    if mydeque[0][1] <= i - L: # 범위에서 벗어난 값은 덱에서 제거
+        mydeque.popleft()
+    print(mydeque[0][0], end=' ')
+```
+<br>
+> 내 풀이  
+```python
+for i in range(N):
+    #deque에 데이터가 존재하는지 확인
+    #추가할 값이 앞에 있는 값보다 커질때까지(=추가할 값이 마지막 값보다 작다면 계속) 
+    #추가할 값보다 앞에있는 값 중에서 큰 값은 제거한다.
+    #while mydeque = 대소비교를 위한 큐에 값이 있을 때 탐색 (큐가 비어있을 때 pop을 하면 에러가 난다.)    
+    #이렇게 해도 시간초과 난다. 
+    #while mydeque and (now[i] < mydeque[-1][1]): 
+        mydeque.pop()
+    mydeque.append([i, now[i]]) # 순서idx , 값
+    #deque는 슬라이스가 불가하다. 
+    #마지막에 추가할 값을 deque에 추가할 예정이므로 윈도우 수-1만큼이 deque에 들어가 있어야 한다. 
+    #if len(mydeque) > L: #그렇다고 이런 로직을 넣으면 안된다.
+    #    mydeque.popleft()
+    #왜냐하면 윈도우는 3이지만 연속된 인덱스들 3개를 기준으로 보는 것이기 때문이다. 
+    #ex) idx4, idx5, idx6(o)  // idx3, idx5, idx(6) [3,4,5,6]구간은 4가 되므로 윈도우가 3인 조건에서는 맞지 않는다. 
+    #따라서 인덱스 기준으로 윈도우를 확인해야 한다. 
+    #가장 작은 값의 인덱스와 현재 추가한 값의 인덱스 차가 윈도우만큼 되는지 확인
+    #>=로 해줘야 하는 이유 인덱스가 윈도우 크기구간에 해당하는지 확인하는데 파이썬은 0부터 시작하므로 구간은 L-1만큼이다. 
+    #근데 이렇게 해도 시간초과 뜬다. 
+    #if mydeque[-1][0]-mydeque[0][0] > L-1:
+    #따라서 이와 같이 처리한다. 
+    if mydeque[0][0] <= i - L:
+        #만약 윈도우 구간을 벗어나는 값이 존재한다면 앞에서부터 삭제한다. 
+        mydeque.popleft()
+    #이렇게 리스트로 추가해서 마지막에 join으로 출력하면 에러뜸.
+    #result.append(mydeque[0][1])
+    #확인용
+    #print(mydeque)
+    #각 반복문 결과를 한번에 출력 
+    #for i in range(5):
+    #    print(i, end=' ')
+#print(' '.join(map(str, result)))
+    #각 반복문마다(윈도우마다) 최솟값을 합쳐서 출력한다. 
+    print(mydeque[0][1])
+```
+시간초과
+
