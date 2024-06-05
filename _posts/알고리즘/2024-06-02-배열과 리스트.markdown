@@ -186,7 +186,7 @@ for k in range(N):
     j=N-1
     #for문으로 작성하면 연산량이 얼마나 될 지 모르므로 while로 한다. 
     while i<j: #투 포인터
-        if A[i]+A[j] == find: #좋은 수는 서로 다른 두 수가 합쳐져서 좋은 수가 나왔을 때 
+        if A[i]+A[j] == find: #좋은 수는 다른 두 수가 합쳐져서 좋은 수가 나왔을 때 
             if i != k and j != k: #두 수 모두 좋은수가 포함되지 않았을 때  
                 result +=1
                 break
