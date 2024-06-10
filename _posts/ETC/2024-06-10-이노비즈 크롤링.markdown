@@ -74,8 +74,8 @@ dropdown_list = []
 for i,v in enumerate(temp):
     print(i, v.text)
 #모든 텍스트가 하나로 합쳐져 있어 따로 처리해줄 필요가 있었다.     
-```
-<br>  
+```  
+  
 ```python
 dropdown_dict = {}
 v.text.split('\n              ')
