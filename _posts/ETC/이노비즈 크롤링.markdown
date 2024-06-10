@@ -109,5 +109,18 @@ for i,v in enumerate(dropdown_dict.keys()):
         dropdown_dict[v].append(v2.text)             
 #브라우저 종료
 driver.quit()
-```
+```  
+<br>
+#데이터프레임 to csv 저장  
+```python
+#ValueError: All arrays must be of the same length
+#orient의 default는 columns인데 이렇게 되면 에러가 나서 변환을 할 수 없다. 
+#columns로 넣으면 각 회사는 열이름이 되고 나머지 데이터들이 series값이 되어 들어가는데 각 회사의 직무 수가 다르기 때문에 오류가 난다. 
 
+#orient: {index / columns / tight} 변환 방식이다. 
+#index은 행을 키값으로 지정, columns는 열을 키값으로 지정, tight는 키값으로 [index / columns / data / index_names / columns_names] 를 가진다.
+#index로 넣어주면 해결된다. 
+
+df = pd.DataFrame.from_dict(dropdown_dict, orient='index')
+df.to_csv('./이노비즈.csv', encoding="cp949")
+```
