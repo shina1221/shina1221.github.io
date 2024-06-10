@@ -64,7 +64,7 @@ into_button.click()
 ```  
 <br>  
 > 중간 확인  
-```python
+
 #페이지 정보 가져오기 
 
 temp = driver.find_elements(By.XPATH, '//*[@id="container"]/div[1]/div/div[2]/form/div/table[3]/tbody/tr[2]/td[2]/select')
