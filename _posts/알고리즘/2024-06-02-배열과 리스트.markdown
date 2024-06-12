@@ -59,8 +59,38 @@ for i in range(N):
 <br>  
 파이썬에서는 배열과 리스트를 구분하지 않지만 알아두도록 하자.  
 <br>   
-> 백준 온라인 저지 [11720](https://www.acmicpc.net/problem/11720)  
 
+> 백준 온라인 저지 11720[숫자의 합 구하기](https://www.acmicpc.net/problem/11720)  
+제한시간 1초  
+```python
+import sys
+n=sys.stdin.readline().strip()
+answer = sum(map(int,list(sys.stdin.readline().strip())))
+print(answer)
+```  
+<br>  
+
+> 백준 온라인 저지 1546[평균](https://www.acmicpc.net/problem/11720)  
+제한시간 2초  
+![평균 구하기 예시]('./_posts/알고리즘/img/평균구하기.jpg')
+```python
+import sys 
+input=sys.stdin.readline
+M=int(input())
+now_list=list(map(int, input().split()))
+
+#최솟값이나 최댓값 min(), max()함수의 시간 복잡도는 O(n) #n은 리스트의 길이 
+print((sum(now_list)/max(now_list))*(100/M))
+```  
+
+> 백준 온라인 저지 11659[구간 합 구하기 4](https://www.acmicpc.net/problem/11659)  
+제한시간 0.5초
+```python
+
+```
+
+> 백준 온라인 저지 11660[구간 합 구하기 2](https://www.acmicpc.net/problem/11660)  
+제한시간 0.1초
 ```python
 import sys
 n=sys.stdin.readline().strip()
