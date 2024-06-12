@@ -13,9 +13,9 @@ category: ETC
 #비슷한 구조를 가지고 있는지 확인해봤는데 그렇지도 않다.  
 #//*[@id="hope_com_duti_1"]  #1개  
 #/html/body/div/div[2]/div[1]/div/div[2]/form/div/table[3]/tbody/tr[2]/td[3]/select #2개  
-    
-그래서 bs4만으로 뽑기엔 한계가 있다. 
-
+```     
+그래서 bs4만으로 뽑기엔 한계가 있다.  
+```python
 #https://googlechromelabs.github.io/chrome-for-testing/ 에서 크롬버전에 맞는 드라이버 다운로드 안해도 됨 
 #!pip install selenium
 
@@ -104,7 +104,7 @@ select=Select(dropdowns)
 #StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame 에러가 뜬다.  
 #driver를 기준으로 가져오는것이 아닌 select 객체를 기준으로 가져와서 적용되지 않는 사항인듯 하다.  
 #따라서 time.sleep()을 고려해봤지만 모두 안되서 중간에 끊기는 지점을 기준으로 다시 시작할 수 밖에 없었다.  
-<br>  
+ 
 for i,v in enumerate(dropdown_dict.keys()):
     #선택값을 없앴지만 드롭다운의 순서는 그대로이므로 +1
     #중소기업기술혁신협회는 0번이 아니라 1번이다.
