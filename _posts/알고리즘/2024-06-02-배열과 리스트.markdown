@@ -86,8 +86,84 @@ print((sum(now_list)/max(now_list))*(100/M))
 > 백준 온라인 저지 11659[구간 합 구하기 4](https://www.acmicpc.net/problem/11659)  
 제한시간 0.5초
 ```python
+#백준에서는 외부 라이브러리 사용불가 
+#import numpy 사용불가해서 자동적으로 np.cumsum도 사용불가 
+import sys
+#sys.stdin.readline
+n, q = map(int,input().split())
+nl = list(map(int, input().split())) 
+cumsum_nl = []
 
-```
+#이렇게 하면 계산하면서 수가 줄어들게 되므로 내가 의도한대로 계산이 안된다. 
+#cumsum_nl = [cumsum_nl[ii-1]+cumsum_nl[ii] for ii in range(1,n)]
+
+#가중합
+for ii in range(n):
+    if ii==0:
+        cumsum_nl.append(0)
+    cumsum_nl.append(cumsum_nl[ii]+nl[ii])
+cumsum_nl.pop(0) #첫번째 요소 제거 
+
+for nn in range(q):
+    start, end = map(int, input().split())
+    #누적합을 구한 리스트에서 n부터 m까지의 합을 구하는 법
+    #ex) 2번째부터 5번째 합 
+    #   5번째 누적합 - 1번째 누적합 
+    #  [5,4,3,2,1]
+    # -[5]
+    # =  [4,3,2,1]의 합      
+    #start값이 1일 때 -2를 하면 마지막 값을 가리키게 되므로 따로 처리해준다. 
+    if start==1:
+        print(cumsum_nl[end-1])
+    else:
+        print(cumsum_nl[end-1]-cumsum_nl[start-2])
+#시간초과 
+```  
+<br>  
+```python
+import sys 
+
+sys.stdin.readline
+n, q = map(int,input().split())
+nl = list(map(int, input().split())) 
+cumsum_nl = []
+
+for ii in range(n):
+    if ii==0:
+        cumsum_nl.append(0)
+    cumsum_nl.append(cumsum_nl[ii]+nl[ii])    
+    
+#기존에 썼던 방식(시간초과) 
+# for nn in range(q):
+#     start, end = map(int, input().split())
+#     if start==1:
+#         print(cumsum_nl[end])
+#     else:
+#         print(cumsum_nl[end]-cumsum_nl[start-1])
+    
+#시간단축 포인트  
+for i in range(q):
+    start, end = map(int, input().split())
+    print(cumsum_nl[end]-cumsum_nl[start-1])
+#맞춤
+```  
+<br>  
+
+#참고사항
+**Big O(1)**, 즉 상수 시간 복잡도(constant time complexity)는 어떤 데이터의 크기와 관계없이 항상 일정한 시간이 걸리는 알고리즘을 나타낸다.  
+이는 **한 번의 연산으로 결과를 도출**할 수 있다는 의미다.  
+<br>  
+반면에 **Big O(n)**, 즉 선형 시간 복잡도(linear time complexity)는 처리해야 할 **데이터의 개수(n)에 비례하여 연산 시간이 증가**하는 알고리즘을 말한다.  
+예를 들어, 데이터가 10개일 때 10번의 연산을, 100개일 때는 100번의 연산을 수행한다고 보면 된다.  
+배열을 순회하거나 리스트의 각 요소를 한번씩 확인하는 등의 작업이 Big O(n)에 해당한다.  
+
+**즉 O(1)은 데이터 크기에 상관없이 연산 횟수가 변하지 않고, O(n)은 데이터의 크기가 커질수록 연산 횟수가 늘어나는 상황**을 나타낸다.  
+[O(1)과 O(n)의 차이](https://www.inflearn.com/questions/1092681/o-1-%EA%B3%BC-o-n-%EC%9D%B4-%ED%97%B7%EA%B0%88%EB%A0%A4%EC%9A%94)  
+<br>  
+시간초과가 되었던 경우 누적합리스트를 생성할 때 리스트의 모든 요소를 한 번 순회해야 하므로 O(n)의 시간이 소요된다.  
+여기서 q개의 쿼리에 대해 해당 작업을 반복해 O(q)의 시간이 소요된다.  
+따라서 O(q) 시간이 소요된다.  
+기존에 내가 쓴 코드는 if문을 거쳐서 수행하기 때문에 연산량이 더 늘어난다. 이 때문에 시간초과가 난 듯 하다.  
 
 > 백준 온라인 저지 11660[구간 합 구하기 2](https://www.acmicpc.net/problem/11660)  
 제한시간 0.1초
