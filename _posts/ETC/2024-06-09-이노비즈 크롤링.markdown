@@ -141,5 +141,5 @@ driver.quit()
 df = pd.DataFrame.from_dict(dropdown_dict, orient='index')
 df.to_csv('./이노비즈.csv', encoding="cp949")
 ```
-![참고1](https://chancoding.tistory.com/202)  
-![참고2](https://chancoding.tistory.com/202)
+[참고1](https://chancoding.tistory.com/202)  
+[참고2](https://chancoding.tistory.com/202)
