@@ -2,7 +2,7 @@
 layout: post
 title: 퍼포먼스 마케팅 첫걸음 04
 date: 2024-06-18 16:20:23 +090
-category: books
+category: Marketing
 ---
 
 # 퍼포먼스 마케팅의 핵심, 검색 광고 이해하기     
