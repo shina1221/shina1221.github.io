@@ -2,7 +2,7 @@
 layout: post
 title: 퍼포먼스 마케팅 첫걸음 03
 date: 2024-06-17 16:20:23 +090
-category: books
+category: Marketing
 ---
 
 # 퍼포먼스 마케터가 하는 일과 담당 업무    
