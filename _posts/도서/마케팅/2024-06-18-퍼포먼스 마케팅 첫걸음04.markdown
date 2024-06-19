@@ -57,8 +57,8 @@ ex) 상위 메뉴 4개가 의류, 악세사리, 신발, 화장품으로 구성�
 광고그룹: 광고와 키워드를 포함하고 있는 껍데기이고 캠페인 아래 단계이다.  
 비슷한 광고와 키워드를 함께 관리할 수 있도록 묶어두는 역할을 한다.  
 ex)의류 캠페인 아래 상의, 하의, 드레스 등의 하위 그룹 구성  
-
-![구글광고 예시2](https://github.com/shina1221/shina1221.github.io/blob/ed680a0a7a1911d6e150b31ca7b6b5b149aef464/_posts/%EB%8F%84%EC%84%9C/%EB%A7%88%EC%BC%80%ED%8C%85/img/%EA%B5%AC%EA%B8%80%20%EA%B4%91%EA%B3%A0%20%EC%98%88%EC%8B%9C.jpg)
+<br>  
+![구글광고 예시2](https://github.com/shina1221/shina1221.github.io/blob/ed680a0a7a1911d6e150b31ca7b6b5b149aef464/_posts/%EB%8F%84%EC%84%9C/%EB%A7%88%EC%BC%80%ED%8C%85/img/%EA%B5%AC%EA%B8%80%20%EA%B4%91%EA%B3%A0%20%EC%98%88%EC%8B%9C.jpg)  
 광고는 크게 광고제목, 내용 입력란, 경로, 확장 소재로 이뤄진다.  
 광고제목(headlines): 눈에 가장 잘 띄고 클릭 가능한 영역이다.  
 따라서 사용자들이 검색할 것 같은 키워드를 포함하거나 서비스를 대표하는 문구들을 입력하는 것이 좋다.  
@@ -99,6 +99,7 @@ ex) 키워드 : 여성 티셔츠
 <br>  
 
 > 모든 데이터를 추적하는 트래킹 방법  
+
 퍼포먼스 마케팅은 데이터를 기반으로 트래킹이 가능해야 한다.  
 트래킹: 소비자가 어디서 광고를 보고 클릭하고, 어떻게 홈페이지나 앱으로 유입했는지 경로를 추적하는 것이다.  
 **리다이렉트 트래킹**: 사용자가 한 페이지에서 다른 페이지로 이동할 때 사용되는 트래킹 방식이다.  
@@ -110,8 +111,8 @@ ex) A사이트에 있는 배너를 클릭해 C사이트로 이동할 때, C사�
 **UTM(Urchin Tracking Module) 트래킹**: URL 뒤에 트래킹을 가능하게 하는 매개변수(파라미터)들을 추가해 구글 애널리틱스나 어도비 애널리틱스 같은 분석 플랫폼으로 정보를 보내는 것이다.  
 복잡한 설치 필요없이 URL을 수정하는 것으로만 트래킹이 가능하게 하는 편리한 방식이다.  
 매개변수의 종류  
-ex)http://www.performance.com?utm_source=google&utm_medium=cpc&utm_campaign=purebrand&utm_term=performance
-http://www.performance.com:광고 URL
+ex)http://www.performance.com?utm_source=google&utm_medium=cpc&utm_campaign=purebrand&utm_term=performance  
+http://www.performance.com:광고 URL  
 ?:UTM트래킹의 첫번째 파트는 ?로 시작하고 그 다음부터는 &를 사용한다.  
 (필수)utm_source=google:트래픽 출처 채널 이름(google)  
 트래픽이 어디서 왔는지 확인하는 부분이다.  
