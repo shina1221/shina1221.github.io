@@ -1,17 +1,11 @@
 ---
 layout: post
-title: 퍼포먼스 마케팅 첫걸음 04-05
+title: 퍼포먼스 마케팅 첫걸음 05
 date: 2024-06-18 16:20:23 +090
 category: Marketing
 ---
 
-
-
-
-
-
-
-#
+#ing
 
 [구글 애드 신규 쿠폰 발급 참고](https://brunch.co.kr/@primingads/75)  
 만약 내가 이용하려는 gmail이메일 주소로 이전에 구글 애즈 계정을 만들었다가 탈퇴하고 다시 크레딧을 받으려해도  
