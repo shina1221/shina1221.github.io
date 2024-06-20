@@ -305,6 +305,7 @@ ex) 입시 설명회 신청 양식을 통해 고객의 이메일 정보를 받�
 입찰의 ![타겟 노출 점유율](https://support.google.com/google-ads/answer/9121108?ctx=tltp&_gl=1*1n9k0sp*_ga*MzM1NTQ1ODY4LjE3MTg4Mzg3NDM.*_ga_V9K47ZG8NP*MTcxODg3MDQ5OS41LjAuMTcxODg3MDQ5OS42MC4wLjA.)은 10으로 지정했고 ![최대 CPC 입찰가 한도](https://support.google.com/google-ads/answer/9121108?ctx=tltp&_gl=1*xszmnb*_ga*MzM1NTQ1ODY4LjE3MTg4Mzg3NDM.*_ga_V9K47ZG8NP*MTcxODg3MDQ5OS41LjAuMTcxODg3MDQ5OS42MC4wLjA.)는 100으로 지정했다.
 <br>
 
+검토  
 ![캠페인 개시1](https://github.com/shina1221/shina1221.github.io/blob/a6abe18d18b81cde16463763840420caa8d773c1/_posts/%EB%8F%84%EC%84%9C/%EB%A7%88%EC%BC%80%ED%8C%85/img/%EC%BA%A0%ED%8E%98%EC%9D%B8%20%EA%B0%9C%EC%8B%9C1.JPG)   
 ![캠페인 개시2](https://github.com/shina1221/shina1221.github.io/blob/a6abe18d18b81cde16463763840420caa8d773c1/_posts/%EB%8F%84%EC%84%9C/%EB%A7%88%EC%BC%80%ED%8C%85/img/%EC%BA%A0%ED%8E%98%EC%9D%B8%20%EA%B0%9C%EC%8B%9C2.JPG)   
 
