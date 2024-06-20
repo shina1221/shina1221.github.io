@@ -15,7 +15,7 @@ category: Marketing
 찾아봤을 때 프로모션은 내가 우선적으로 충전하고 이후에 프로모션이 들어와서 충당되는 식으로 진행되는 듯 하다.  
 어찌되었건 지출은 필연적인 듯하다.  
   
-최소한의 금액 16000원을 수동 결제하고 ![couponer](https://couponer.app/g?utm_source=adcore.com&utm_medium=blog&utm_campaign=article)에서 500달러어치 프로모션 코드를 취득 시도했다.  
+최소한의 금액 16000원을 수동 결제하고 [couponer](https://couponer.app/g?utm_source=adcore.com&utm_medium=blog&utm_campaign=article)에서 500달러어치 프로모션 코드를 취득 시도했다.  
 쿠폰 지급을 위해 검토중 30일 이내 지출이 1달러 이상 있어야 한다는 얘기가 있다.  
 <br>
 
@@ -50,7 +50,7 @@ category: Marketing
 <br>  
 판매를 선택했을 때 선택지(판매 전환 목표)  
 선택한 목표를 토대로 스마트 자동 입찰에서는 적합한 사용자에게 광고를 게재해 목표에 도달할 수 있게 캠페인을 최적화한다.  
-*![스마트 자동입찰](https://support.google.com/google-ads/answer/7065882?hl=ko&_gl=1*1nkc8da*_ga*MzM1NTQ1ODY4LjE3MTg4Mzg3NDM.*_ga_V9K47ZG8NP*MTcxODg0NTY0Ni4yLjAuMTcxODg0NTY0OS41Ny4wLjA.): 모든 입찰에서 전환수 또는 전환 가치를 높이기 위해 구글AI를 이용해 입찰가를 최적화 하는 입찰 전략이다. 실시간 입찰이라고도 알려져 있다.  
+*[스마트 자동입찰](https://support.google.com/google-ads/answer/7065882?hl=ko&_gl=1*1nkc8da*_ga*MzM1NTQ1ODY4LjE3MTg4Mzg3NDM.*_ga_V9K47ZG8NP*MTcxODg0NTY0Ni4yLjAuMTcxODg0NTY0OS41Ny4wLjA.): 모든 입찰에서 전환수 또는 전환 가치를 높이기 위해 구글AI를 이용해 입찰가를 최적화 하는 입찰 전략이다. 실시간 입찰이라고도 알려져 있다.  
 ex) 타겟CPA, 타겟 광고 투자수익(tROAS), 전환수 최대화, 전환 가치 극대화  
 구매: 웹사이트, 앱 또는 매장에서 제품을 구매할 가능성이 가장 높은 사용자에게 광고를 게재한다.  
 구독 구매: 내 서비스 또는 제품을 유료로 구독할 가능성이 가장 높은 사용자에게 광고를 게재한다.  
@@ -81,7 +81,7 @@ ex) 타겟CPA, 타겟 광고 투자수익(tROAS), 전환수 최대화, 전환 �
 **목표달성방법은 웹사이트 방문으로 하고 캠페인 이름을 campaign_test로 입력한다.**  
 **중점을 둘 목표 선택은 페이지 조회를 선택**한다.  
 
-*![향상된 전환 사용 설정](https://support.google.com/google-ads/answer/14170725?hl=ko&_gl=1*mqiecv*_ga*MzM1NTQ1ODY4LjE3MTg4Mzg3NDM.*_ga_V9K47ZG8NP*MTcxODg0NTY0Ni4yLjAuMTcxODg0NTY0OS41Ny4wLjA.)    
+*[향상된 전환 사용 설정](https://support.google.com/google-ads/answer/14170725?hl=ko&_gl=1*mqiecv*_ga*MzM1NTQ1ODY4LjE3MTg4Mzg3NDM.*_ga_V9K47ZG8NP*MTcxODg0NTY0Ni4yLjAuMTcxODg0NTY0OS41Ny4wLjA.)    
 향상된 전환은 고객이 웹사이트에서 제공하는 정보(이메일 주소)를 이용해 측정을 개선하고 캠페인을 최적화한다.  
 이 설정은 계정의 모든 적격 전환에 적용된다.  
 해당 속성을 설정해주면 더 나은 전환 데이터 수집 및 보고가 가능하다.  
