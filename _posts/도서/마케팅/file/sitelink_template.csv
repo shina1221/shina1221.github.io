@@ -1,0 +1,31 @@
+# This is a template for a sample upload to modify sitelinks assets. Please alter the data to suit your account.
+"# We recommend that you use the new Mobile final URL, Tracking template, and Custom parameter columns. Additional optional columns are: Start date, End date, and Scheduling."
+Row Type,Action,Asset action,Customer ID,Level,Campaign ID,Campaign,Ad group ID,Ad group,Item ID,Sitelink text,Final URL,Mobile final URL,Final URL suffix,Description,Description 2,Tracking template,Custom parameter,Schedules,Start date,End date,Scheduling,Device preference type,Row tag
+"# Required.
+Supported values: Sitelink.","Optional.
+Supported values: Add; Edit; Remove.","Optional.
+Supported values: Create new; Use existing; Edit.","Optional.
+Example(s): 123-456-7890.","Optional.
+Supported values: Ad group; Campaign.","Optional.
+Example(s): 1234.","Required.
+Example(s): Shoe campaign.","Optional.
+Example(s): 1234.","Required.
+Example(s): Shoe ad group.","Required on edit.
+Example(s): 1234.","Required on create.
+Example(s): Order Online Now.","Required on create.
+Example(s): http://www.example.com ; https://www.example.org.","Optional.
+Example(s): http://m.example.com ; https://m.example.org.
+Supports remove_value.","Optional.
+Example(s): x=y.
+Supports remove_value.","Optional.
+Example(s): Free next day delivery.","Optional.
+Example(s): with orders above $50.","Optional.
+Example(s): {lpurl}?cat={_category}.","Optional.
+Example(s): {_color}=red ; {_bg}=blue.
+Supports remove_value.","Optional.
+Example(s): Monday, 08:00 AM - 05:15 PM.","Optional.
+Example(s): 2024-02-29.","Optional.
+Example(s): 2024-02-29.","Optional.
+Example(s): Monday, 08:00 AM - 05:15 PM.","Optional.
+Supported values: Mobile.","Optional.
+Example(s): foo."
