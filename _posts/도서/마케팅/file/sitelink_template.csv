@@ -1,5 +1,5 @@
-# This is a template for a sample upload to modify sitelinks assets. Please alter the data to suit your account.
-"# We recommend that you use the new Mobile final URL, Tracking template, and Custom parameter columns. Additional optional columns are: Start date, End date, and Scheduling."
+# This is a template for a sample upload to modify sitelinks assets. Please alter the data to suit your account.,,,,,,,,,,,,,,,,,,,,,,,
+"# We recommend that you use the new Mobile final URL, Tracking template, and Custom parameter columns. Additional optional columns are: Start date, End date, and Scheduling.",,,,,,,,,,,,,,,,,,,,,,,
 Row Type,Action,Asset action,Customer ID,Level,Campaign ID,Campaign,Ad group ID,Ad group,Item ID,Sitelink text,Final URL,Mobile final URL,Final URL suffix,Description,Description 2,Tracking template,Custom parameter,Schedules,Start date,End date,Scheduling,Device preference type,Row tag
 "# Required.
 Supported values: Sitelink.","Optional.
@@ -29,3 +29,7 @@ Example(s): 2024-02-29.","Optional.
 Example(s): Monday, 08:00 AM - 05:15 PM.","Optional.
 Supported values: Mobile.","Optional.
 Example(s): foo."
+,,,,Level,Campaign ID,Campaign,Ad group ID,Ad group,,Sitelink text,Final URL,,,Description,Description 2,,,,Start date,End date,,,
+,,,,Campaign,,디자이너 - 베어,,,,베어 의류,https://www.heenda.com/designer/bear/clothing ?,,,쳥바지 및 티셔츠,베어 시크니쳐 컬렉션 확인하기,,,,2025-05-01,2025-05-31,,,
+,,,,Campaign,,디자이너 - 베어,,,,베어 신발,https://www.heenda.com/designer/bear/shoes ,,,새 브랜드 베어의,"운동화, 샌들 신상품 확인하기",,,,2025-05-01,2025-05-31,,,
+,,,,Campaign,,디자이너 - 베어,,,,베어 액세서리,https://www.heenda.com/designer/bear/accessories,,,홀리데이 필수품 베어의,모자와 가방을 확인해보세요. ,,,,2025-05-01,2025-05-31,,,
