@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 데이터로 말한다! 퍼포먼스 마케팅 01
+title: 데이터로 말한다! 퍼포먼스 마케팅 01-02
 date: 2024-06-14 16:20:23 +0900
 category: Marketing
 ---
