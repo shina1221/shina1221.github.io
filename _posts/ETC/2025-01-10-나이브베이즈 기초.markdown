@@ -7,7 +7,7 @@ category: ETC
   
 ![img1](https://github.com/shina1221/shina1221.github.io/blob/e9a98992cc5371fd2fccd5f678f26f0f65b8306d/_posts/ETC/img/img1.jpg)
 <br/>
-![img2](./_posts/ETC/img/img1.jpg)  
+![img2](../ETC/img/_posts/ETC/img/img1.jpg)  tnwjd
 ![img3](https://github.com/shina1221/shina1221.github.io/blob/e9a98992cc5371fd2fccd5f678f26f0f65b8306d/_posts/ETC/img/img3.jpg)
 
 [토닥토닥 sklearn 텍스트를 위한 머신러닝](https://wikidocs.net/34256)  
