@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 나이브베이즈 기초
+title: naive_bayse_basics
 date: 2025-01-10 19:20:23 +0900
 category: ETC
 ---
