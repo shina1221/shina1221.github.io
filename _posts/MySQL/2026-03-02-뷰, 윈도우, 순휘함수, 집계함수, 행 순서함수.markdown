@@ -257,6 +257,117 @@ OrderID,
 Sales,
 SUM(Sales) OVER (PARTITION BY OrderID) AS TotalSalesByOrder
 FROM `pj-1-489007.part1.superstore`
+
+-- Windowing 절 실습
+-- 같은 날짜 안에서 주문 순서대로 매출을 계속 더해가는 누적합 계산
+SELECT
+OrderDate,
+OrderID,
+Sales,
+SUM(Sales) OVER (
+PARTITION BY OrderDate
+ORDER BY OrderID
+-- ROWS BETWEEN A and B 구조
+ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW -- 맨 처음 행부터 현재 행까지 모두 더하기
+) AS CumulativeSales
+FROM `pj-1-489007.part1.superstore`
+ORDER BY OrderDate, OrderID;
+
+
+#mysql 버전
+SELECT *
+FROM (
+    SELECT 
+        OrderDate,
+        CumulativeSales,
+        RANK() OVER (
+            PARTITION BY OrderDate 
+            ORDER BY CumulativeSales DESC
+        ) AS rnk
+    FROM (
+        SELECT
+            OrderDate,
+            OrderID,
+            Sales,
+            SUM(Sales) OVER (
+                PARTITION BY OrderDate
+                ORDER BY OrderID
+                ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+            ) AS CumulativeSales
+        FROM superstore
+    ) AS t1
+) AS t2
+WHERE rnk = 1;
+
+#날짜별 마지막 행 뽑기
+SELECT *
+FROM (
+    SELECT 
+        OrderDate,
+        OrderID,
+        SUM(Sales) OVER (
+            PARTITION BY OrderDate
+            ORDER BY OrderID
+        ) AS CumulativeSales,
+        ROW_NUMBER() OVER (
+            PARTITION BY OrderDate
+            ORDER BY OrderID DESC
+        ) AS rn
+    FROM superstore
+) t
+WHERE rn = 1;
+```  
+  
+행 순서 함수  
+```
+SELECT FIRST_VALUE(col1) OVER (…)
+```  
+함수 설명  
+FIRST_VALUE(컬럼) 가장 먼저 나온 값을 구함  
+LAST_VALUE(컬럼) 가장 나중에 나온 값을 구함  
+LAG(컬럼, n) 이전 n번째 행을 가져옴  
+LEAD(컬럼, n) 이후 n번째 행을 가져옴  
+  
+```
+-- 행 순서 함수 (VALUE ACCESS FUNCTIONS) 실습
+SELECT CustomerID, OrderDate, Sales,
+FIRST_VALUE(Sales) OVER (
+PARTITION BY CustomerID
+ORDER BY OrderDate
+) AS FirstSale
+FROM
+`ProjectID.DatasetID.superstore`
+ORDER BY CustomerID, OrderDate, FirstSale;
+
+-- 행 순서 함수 (VALUE ACCESS FUNCTIONS) 실습
+SELECT CustomerID, OrderDate, Sales,
+LAST_VALUE(Sales) OVER (
+PARTITION BY CustomerID
+ORDER BY OrderDate
+) AS FirstSale
+FROM
+`ProjectID.DatasetID.superstore`
+ORDER BY CustomerID, OrderDate, FirstSale;
+
+-- 행 순서 함수 (VALUE ACCESS FUNCTIONS) 실습
+SELECT CustomerID, OrderDate, Sales,
+LAG(Sales, 1) OVER (
+PARTITION BY CustomerID
+ORDER BY OrderDate
+) AS PreviousSale
+FROM
+`ProjectID.DatasetID.superstore`
+ORDER BY CustomerID, OrderDate, FirstSale;
+
+-- 행 순서 함수 (VALUE ACCESS FUNCTIONS) 실습
+SELECT CustomerID, OrderDate, Sales,
+LEAD(Sales, 1) OVER (
+PARTITION BY CustomerID
+ORDER BY OrderDate
+) AS NextSale
+FROM
+`ProjectID.DatasetID.superstore`
+ORDER BY CustomerID, OrderDate, FirstSale;
 ```  
   
 ```
