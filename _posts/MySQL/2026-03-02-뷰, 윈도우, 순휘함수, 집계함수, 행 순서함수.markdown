@@ -251,6 +251,7 @@ CURRENT ROW 윈도우의 시작 위치 (현재 행)
 UNBOUNDED PRECEDING 윈도우 시작 위치가 첫번째 행  
 UNBOUNDED FOLLOWING 윈도우 마지막 위치가 마지막 행  
 ```
+-- 고객별 매출 확인
 SELECT
 OrderID,
 Sales,
