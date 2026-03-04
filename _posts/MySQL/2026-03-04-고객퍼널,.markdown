@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SQL 리텐션, 고객퍼널, RFM, 판매실적 분석하기(빅쿼리 버전) 
+title: 고객퍼널(빅쿼리 버전) 
 date: 2026-03-04 19:20:23 +0900
 category: Statistics
 ---
