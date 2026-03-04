@@ -49,7 +49,7 @@ DELETE FROM superstore;
 #superstore 테이블을 삭제
 ```
 집계함수 중 count는 NULL값을 제외하고 가져오며,  
-COUNT(*), COUNT(DISTINCT 컬럼명)은 나머지 집계 함수에서 적용 블기  
+COUNT(*), COUNT(DISTINCT 컬럼명)은 나머지 집계 함수에서 적용 불가  
 - SUM(컬럼명), AVG(컬럼명), MAX(컬럼명), MIN(컬럼명)  
   
 데이터 그룹에 조건 적용하기  
