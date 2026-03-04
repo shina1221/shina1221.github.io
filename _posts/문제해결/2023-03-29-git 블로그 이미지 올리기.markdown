@@ -12,6 +12,9 @@ Format: ![Alt Text](url)
 정확인 이미지 경로를 얻기 위해선
 issues탭에서 submit new issue를 열어 git에 올려둔 이미지를 끌어놓으면 마크다운 문법이 보임. 
 
+2차 문제해결  
+git에서 오른쪽 마우스 버튼 클릭 후 이미지 주소 복사해서 다음의 서식을 따르면 됨  
+![이미지 명](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/big%20query%20retention%20chat%20gpt%20chart.png?raw=true)   
 #참고  
 [Hyeon's DevLog](https://hyeonjiwon.github.io/blog/markdown_img/)  
 
