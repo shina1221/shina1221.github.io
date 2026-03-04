@@ -192,8 +192,10 @@ round((customercount / first_value(customercount) over (partition by cohortmonth
 from cohortanalysis 
 order by cohortmonth, invoicemonth;
 ```
+쿼리결과를 save results로 csv 파일형태로 다운로드하고 
+해당 파일을 CHAT GPT에 넣어서 리텐션 결과를 시각화해달라고 하면 다음과 같은 결과 생성  
 
-
+![result](_posts/MySQL/img/big query retention chat gpt chart.png)  
 ---  
   
 참고 출처:  
