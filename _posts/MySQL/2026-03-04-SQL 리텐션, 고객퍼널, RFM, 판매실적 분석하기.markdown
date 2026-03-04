@@ -195,7 +195,7 @@ order by cohortmonth, invoicemonth;
 쿼리결과를 save results로 csv 파일형태로 다운로드하고 
 해당 파일을 CHAT GPT에 넣어서 리텐션 결과를 시각화해달라고 하면 다음과 같은 결과 생성  
 
-![result](_posts/MySQL/img/big query retention chat gpt chart.png)  
+![result](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/big%20query%20retention%20chat%20gpt%20chart.png?raw=true)  
 ---  
   
 참고 출처:  
