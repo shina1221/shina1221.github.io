@@ -1,0 +1,202 @@
+---
+layout: post
+title: SQL 리텐션, 고객퍼널, RFM, 판매실적 분석하기(빅쿼리 버전) 
+date: 2026-03-04 19:20:23 +0900
+category: Statistics
+---
+```
+SELECT * FROM `pj-1-489007.part1.retention` LIMIT 1000;
+```  
+코호트(cohort)란?  
+특정 기준을 공유하는 사용자(고객) 집단  
+여기서는 보통 “첫 구매한 월”이 같은 고객 집단 = 코호트로 정의  
+ex)  
+2010-12에 첫 구매한 고객들 = 2010-12 코호트  
+2011-01에 첫 구매한 고객들 = 2011-01 코호트  
+  
+코호트를 설정해야 하는 이유  
+전체 재구매율(리텐션)을 그냥 보면, “신규 유입이 많아서 좋아 보이는 건지”  
+“기존 고객이 실제로 남아있는 건지”가 섞여서 원인 분석이 안됨  
+유입 시점이 같은 고객끼리 비교하므로, 각 월에 유입된 고객의 잔존/이탈 패턴을 정밀하게 볼 수 있고  
+프로모션/정책 변화/시즌성 영향도 “그 달 코호트부터” 어떻게 바뀌었는지 추적 가능
+
+```
+-- 코호트(첫 구매월) + 월별 액티브 계산 + 리텐션 테이블
+
+-- 월별 코호트(첫 구매월) 기반 리텐션 (고객 수 기준)
+WITH base AS (
+  SELECT
+    CAST(CustomerID AS STRING) AS customer_id,
+    DATE(InvoiceDate) AS invoice_date,
+    DATE_TRUNC(DATE(InvoiceDate), MONTH) AS order_month
+  FROM `project.dataset.online_retail`
+  WHERE CustomerID IS NOT NULL
+    AND Quantity > 0
+    AND UnitPrice > 0
+),
+
+-- 고객별 첫 구매월(=cohort_month)
+cohort AS (
+  SELECT
+    customer_id,
+    MIN(order_month) AS cohort_month
+  FROM base
+  GROUP BY customer_id
+),
+
+-- 고객의 각 구매월에 대해 cohort 붙이기
+activity AS (
+  SELECT
+    b.customer_id,
+    c.cohort_month,
+    b.order_month,
+    DATE_DIFF(b.order_month, c.cohort_month, MONTH) AS cohort_index
+  FROM base b
+  JOIN cohort c
+    USING (customer_id)
+  GROUP BY b.customer_id, c.cohort_month, b.order_month
+),
+
+-- 코호트별, n개월차에 활동한 고객 수
+retention AS (
+  SELECT
+    cohort_month,
+    cohort_index,
+    COUNT(DISTINCT customer_id) AS active_customers
+  FROM activity
+  GROUP BY cohort_month, cohort_index
+),
+
+-- 코호트 크기(0개월차 고객 수)
+cohort_size AS (
+  SELECT
+    cohort_month,
+    MAX(IF(cohort_index = 0, active_customers, NULL)) AS cohort_customers
+  FROM retention
+  GROUP BY cohort_month
+)
+
+SELECT
+  r.cohort_month,
+  r.cohort_index,
+  s.cohort_customers,
+  r.active_customers,
+  SAFE_DIVIDE(r.active_customers, s.cohort_customers) AS retention_rate
+FROM retention r
+JOIN cohort_size s
+  USING (cohort_month)
+ORDER BY cohort_month, cohort_index;
+```
+#리텐션 “피벗 테이블(코호트 매트릭스)” 형태로 보고 싶을 때  
+빅쿼리는 고정 컬럼만 피벗가능해서 0~12로 범위를 정하는 것이 보통  
+```
+WITH base AS (
+  SELECT
+    CAST(CustomerID AS STRING) AS customer_id,
+    DATE_TRUNC(DATE(InvoiceDate), MONTH) AS order_month
+  FROM `project.dataset.online_retail`
+  WHERE CustomerID IS NOT NULL
+    AND Quantity > 0
+    AND UnitPrice > 0
+),
+cohort AS (
+  SELECT customer_id, MIN(order_month) AS cohort_month
+  FROM base
+  GROUP BY customer_id
+),
+activity AS (
+  SELECT
+    c.cohort_month,
+    -- date_diff로 두 날짜 사이의 차이를 특정 단위(일,월,년 등)로 계산
+    -- 코호트 분석에서 첫 구매후 몇개월이 지났는지 계산할 때 사용 
+    -- SELECT DATE_DIFF('2023-02-01', '2023-01-01', DAY) 결과값 31
+    DATE_DIFF(b.order_month, c.cohort_month, MONTH) AS cohort_index,
+    b.customer_id
+  FROM base b
+  JOIN cohort c USING (customer_id)
+  GROUP BY c.cohort_month, cohort_index, b.customer_id
+),
+ret AS (
+  SELECT
+    cohort_month,
+    cohort_index,
+    COUNT(DISTINCT customer_id) AS active_customers
+  FROM activity
+  WHERE cohort_index BETWEEN 0 AND 12
+  GROUP BY cohort_month, cohort_index
+),
+size AS (
+  SELECT
+    cohort_month,
+    MAX(IF(cohort_index=0, active_customers, NULL)) AS cohort_customers
+  FROM ret
+  GROUP BY cohort_month
+),
+final AS (
+  SELECT
+    r.cohort_month,
+    r.cohort_index,
+    SAFE_DIVIDE(r.active_customers, s.cohort_customers) AS retention_rate
+  FROM ret r
+  JOIN size s USING (cohort_month)
+)
+SELECT *
+FROM final
+PIVOT (
+  MAX(retention_rate) FOR cohort_index IN (0,1,2,3,4,5,6,7,8,9,10,11,12)
+)
+ORDER BY cohort_month;
+```  
+  
+```
+# 코호트 분석(현재 기준 월별 코호트 분석) 
+-- with를 통해 서브쿼리를 뷰처럼 가상의 테이블에 저장 
+-- 월 단위로 데이터를 자름  
+with invoicedata as (
+  select 
+  invoiceNo,
+  CustomerID,
+  -- date_trunc('month', '2023-10-15 14:30:00') -> 2023-10-01 00:00:00
+  DATE_TRUNC(DATE(InvoiceDate), Month) as invoicemonth
+  FROM `pj-1-489007.part1.retention`
+),
+-- 각 고객별 첫 구매월 계산
+firstpurchase as (
+  select 
+  customerid, 
+  MIN(InvoiceMonth) AS cohortMonth 
+  FROM invoicedata 
+  group by customerid
+),
+-- 각 코호트의 월별 고객 수 계산
+cohortanalysis as (
+  select 
+  f.cohortmonth, -- 첫구매가 일어난 월
+  i.invoicemonth, -- 각 월
+  count(distinct i.customerid) as customercount 
+  from firstpurchase f 
+  join invoicedata i 
+  on f.customerid = i.customerid 
+  group by f.cohortmonth, i.invoicemonth -- 핵심
+  order by f.cohortmonth, i.invoicemonth 
+)
+-- select * from cohortanalysis;
+-- 각 코호트의 월별 리텐션율 계산
+select 
+cohortmonth, -- 코호트
+invoicemonth, -- 구매월
+customercount, -- 코호트 별 고객수
+--FIRST_VALUE()는 윈도우 함수(Window Function)로, 정렬된 그룹 내에서 가장 첫 번째 값을 가져오는 함수
+-- 코호트 리텐션율(현재 월에 활동한 고객수/코호트 최초 고객수(first_value))
+round((customercount / first_value(customercount) over (partition by cohortmonth order by invoicemonth)) * 100, 2) as retentionrate -- 유지율(코호트 월에 처음 구매한 고객 수를 준으로 현재 월에 남아있는 고객 수의 비율 계산)
+from cohortanalysis 
+order by cohortmonth, invoicemonth;
+```
+
+
+---  
+  
+참고 출처:  
+데이터 분석 3종 필수 스킬 python&SQL&Excel입문  
+CHAT GPT
+ 
