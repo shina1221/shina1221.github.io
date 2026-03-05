@@ -69,7 +69,44 @@ concat(recency_score, frequency_score, monetary_score) as rfm_segment
 
 from rfm_scores
 order by rfm_segment;
-```
+```  
+![R](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/r.png?raw=true)  
+![F](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/f.png?raw=true)  
+![M](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/m.png?raw=true)  
+  
+![Customer Segmentation Distribution](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/Customer%20Segmentation%20Distribution.png?raw=true)  
+![Revenue Contribution by Segment](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/Revenue%20Contribution%20by%20Segment.png?raw=true)  
+![Average Spending by Segment](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/Average%20Spending%20by%20Segment.png?raw=true)  
+![Average Purchase Frequency by Segment](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/Average%20Purchase%20Frequency%20by%20segment.png?raw=true)  
+  
+Segment	의미  
+VIP_AllHigh	R,F,M 모두 높은 고객  
+LowR_HighFM	오래전에 구매했지만 구매빈도·금액 높은 고객  
+LowR_HighF	오래전에 구매했지만 구매횟수 높은 고객  
+LowR_HighM	오래전에 구매했지만 구매금액 높은 고객  
+Recent_LowFreq	최근 구매했지만 구매횟수 낮은 고객  
+Recent_LowSpend	최근 구매했지만 소비금액 낮은 고객  
+Mid_Customers	평균 고객  
+  
+#인사이트  
+1. 대부분의 고객이 평균 고객 또는 최근 구매하지만 구매빈도가 낮은 고객->단발성 고객이 많음  
+2. 최근 구매고객이 매출 대부분을 만듦  
+3. 최근 구매 고객의 평균 지출이 높음-> recency가 매출과 강한 관계를 보임  
+4. r은 낮지만 rm은 높은 고객(예전에 많이 구매했지만 최근 구매가 없는 고객)의 경우 이탈고객으로 간주  
+   리마케팅이나 할인쿠폰, 푸시메세지, 이메일 캠페인 등을 고려  
+5. r은 낮지만 f가 높은 고객(충성 고객이었지만 최근 구매가 없는 경우)  
+   복귀 캠페인, 프로모션 고려  
+6. r은 낮지만 m은 높은 고객(고액 고객이었지만 최근 구매액 없음)  
+   개인화 마케팅이나 VIP 복귀 전략 고려  
+7. r은 높지만 f는 낮은 고객(최근 구매했지만 반복구매가 없는 성장가능 고객)  
+   추천상품이나 번들상품 고려  
+8. rfm모두 높은 고객  
+   VIP 프로그램이나 멤버십 고려  
+
+최근 구매 고객이 주로 매출을 만들고  
+단발성 구매 고객이 다수 -> 재구매 전략 필요  
+과거 충성 고객이 다수 존재 -> 리텐션 캠페인 필요  
+  
 ---  
   
 참고 출처:  
