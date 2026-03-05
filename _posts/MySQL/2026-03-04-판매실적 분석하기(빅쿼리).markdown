@@ -1,0 +1,46 @@
+---
+layout: post
+title: 판매실적 분석하기(빅쿼리 버전) 
+date: 2026-03-04 19:20:23 +0900
+category: Statistics
+---
+
+```
+-- SELECT * FROM `pj-1-489007.part1.sales` LIMIT 1000;
+
+-- 시간의 흐름에 따른 판매 실적을 분석해 미래의 sales와 profit 예측하기  
+-- 날짜별 주문 실적을 정리할 수 있는 쿼리  
+select(invoicedate) as orderdate,
+sum(quantity) as totalquantity,
+sum(quantity * unitprice) as totalsales,
+sum(quantity * unitprice * 0.2) as totalprofit
+from `pj-1-489007.part1.sales` 
+group by orderdate
+order by orderdate;
+```  
+chat gpt를 통해 매출(sales)과 판매량(quantity) arima 모델로 예측 요청  
+![sales](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/total%20sales.png?raw=true)  
+![quantity](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/total%20quantity%20sold.png?raw=true)  
+![sales forecast](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/11%20to%2012%20sales%20forecast.png?raw=true)  
+![quantity forecast](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/MySQL/img/11%20to%2012%20quantity%20forecast.png?raw=true)  
+  
+실선: 실제데이터  
+점선: arima 예측구간  
+음영: 95% 신뢰구간  
+  
+판매량은 11월에 1.6만에서 3.8만정도 나왔고 여러번의 피크발생  
+12월초에는 약 4.1만까지 갔다가 9일에 0.9정도로 급감  
+하지만 예측결과 평균수준으로 돌아올 것으로 예상  
+매출 또한 평균수준을 유지할 것으로 예상  
+  
+11월에서 12월로 가며 연말에 판매량이 상승하는데  
+이벤트나 프로모션 영향일 가능성이 있음  
+
+arima 모델의 경우시계열 데이터의 평균 회귀특성을 반영해 극단적인 값이 나오면 다음에는 보통 수준으로 돌아온다고 가정  
+현재 데이터는 크게 흔들려서 예측값은 평균 근처로 모이는 것으로 보임  
+---  
+  
+참고 출처:  
+데이터 분석 3종 필수 스킬 python&SQL&Excel입문  
+CHAT GPT
+ 
