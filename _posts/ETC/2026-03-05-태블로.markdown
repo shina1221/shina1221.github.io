@@ -1,0 +1,13 @@
+---
+layout: post
+title: 태블로 맛보기
+date: 2026-03-05 19:20:23 +0900
+category: Statistics
+---
+
+---  
+  
+참고 출처:  
+데이터 분석 3종 필수 스킬 python&SQL&Excel입문  
+CHAT GPT
+ 
