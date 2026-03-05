@@ -1,0 +1,78 @@
+---
+layout: post
+title: RFM(빅쿼리 버전) 
+date: 2026-03-04 19:20:23 +0900
+category: Statistics
+---
+RFM 분석 (RFM Analysis)  
+고객의 구매 행동을 분석하여 고객 가치를 평가하는 분석 프레임워크  
+Recency (최신성), Frequency (빈도), Monetary Value (구매 금액)의 세가지 요소로  
+구성이 되어서, 고객을 다양한 세그먼트로 나눠서 마케팅 전략을 실행할 수 있는 기준이 됨  
+- Recency(최신성): 고객이 마지막으로 구매한 시점. 최근에 구매를 한 고객일수록 더 가치가 높은 것으로 간주  
+“마지막 구매일로부터 현재까지의 일수”로 계산 됨  
+- Frequency(빈도): 일정 기간 동안 고객이 얼마나 자주 구매하는지를 나타냄  
+더 자주 구매하는 고객일수록 더 충성도가 높고 가치 있는 고객으로 평가 됨  
+- Monetary Value (구매 금액): 고객이 일정 기간 동안 소비한 총 금액. 구매액이 클수록 가치가 높다고 평가  
+  
+RFM 분석 (RFM Analysis)의 과정  
+1. 데이터 수집  
+2. RFM 지표 계산: 각 고객의 최신성, 빈도, 구매 금액 계산  
+3. RFM 점수 할당: 통상적으로 각 요소를 1~5점 척도로 나눠서 평가. 점수가 높을수록 좋음  
+4. 고객 세분화: RFM 점수를 기반으로 고객을 여러 그룹으로 나눔  
+5. 전략 수립: 각 그룹에 맞는 마케팅 전략을 수립. 우수 고객에게는 특별 할인이나 멤버십 혜택을 제공해 브랜드 충성도를 높일 수 있음  
+ex)  
+R은 낮고 FM은 높은 고객의 경우 한번 더 어떻게 하면 구매를 늘릴 수 있을지를 고민  
+R은 높지만 FM은 낮은 고객의 경우 VIP고객이나 충성고객으로 전환할 수 있는 전략을 고민  
+
+```
+-- SELECT * FROM `pj-1-489007.part1.rfm` LIMIT 1000
+
+-- 기준이 되는 최근일자 정의
+declare reference_date date default '2011-12-10';
+-- 고객별 rfm 지표 만들기 
+with rfm_base as (
+  select 
+  customerid,
+  max(date(invoicedate)) as last_purchase_date, -- 고객의 마지막 구매날짜
+  count(distinct invoiceno) as frequency, -- 고객이 구매한 주문 횟수
+  sum(quantity * unitprice) as monetary -- 고객의 총 구매금액
+  from `pj-1-489007.part1.rfm`
+  where customerid is not null
+  group by CustomerID
+),
+rfm_scores as (
+  select 
+  customerid,
+  --기준일(2011-12-10) - 마지막 구매일
+  date_diff(reference_date, last_purchase_date, day) as recency,
+  frequency, 
+  monetary,
+  -- ntile로 5등분// desc로 안하면 최근 구매고객이 앞쪽으로 1점에 가까움  
+  ntile(5) over (order by date_diff(reference_date, last_purchase_date, day) desc) as recency_score,
+  ntile(5) over (order by frequency desc) as frequency_score,
+  ntile(5) over (order by monetary desc) as monetary_score
+  from rfm_base
+)
+select
+customerid,
+recency,
+frequency,
+monetary,
+-- 6- recency_score as recency_score,
+recency_score,
+frequency_score,
+monetary_score,
+-- 6- 로 최근일수록 점수를 높게 배정 
+-- concat(6-recency_score, frequency_score, monetary_score) as rfm_segment
+-- concat으로 고객 점수코드 생성 예: R=5, F=4, M=3이면 "543"
+concat(recency_score, frequency_score, monetary_score) as rfm_segment
+
+from rfm_scores
+order by rfm_segment;
+```
+---  
+  
+참고 출처:  
+데이터 분석 3종 필수 스킬 python&SQL&Excel입문  
+CHAT GPT
+ 
