@@ -1,0 +1,132 @@
+---
+layout: post
+title: 태블로 맛보기1
+date: 2026-03-05 19:20:23 +0900
+category: Statistics
+---
+차원  
+데이터를 설명하는 기준이나 범주를 나타내는 요소  
+  
+열이나 행에 넣어지는 차원(컬럼)을 필이라고 부름  
+
+![태블로3](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/3%EC%A2%85%EC%8A%A4%ED%82%AC%20%ED%83%9C%EB%B8%94%EB%A1%9C3.png)
+속성에서 월은 두가지가 있는데 월별 집계는 위쪽 월 시간별로 집계하고 있다면 아래에 있는 월은 연도와 월별 데이터를 나눠서 시간 순서대로 저장되어 있다는 차이가 있음  
+그래서 아래쪽 월을 선택하면 차원값을 보면 카테고리컬 값이었던 것이 수치형으로 변경됨을 확인할 수 있음   
+  
+![태블로4](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/3%EC%A2%85%EC%8A%A4%ED%82%AC%20%ED%83%9C%EB%B8%94%EB%A1%9C4.png)  
+대시보드를 만들었을 때 그래프가 한쪽에 치우쳐져 있을 경우 다음의 옵션을 통해 중앙에 배치한 뒤  
+대시보드에 띄워둔 차트를 지웠다 다시 넣으면 해결됨 
+  
+![태블로5](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/3%EC%A2%85%EC%8A%A4%ED%82%AC%20%ED%83%9C%EB%B8%94%EB%A1%9C5.png)  
+  
+프로젝트 모니터링 시 고려해야하는 점  
+Key Perfirmance Index: 꾸준히 모니터링 하기 위함   
+Business Alignment: 비즈니스 목표와 연결이 되어야 전략적 방향을 설정하고 목표를 달성하기 위한 방법을 식별하기 위함   
+Decision Making:기업 내에서 액션 플랜으로 이어질 수 있는 계획들을 세우고 관리하기 위함      
+  
+기획/PM 직군의 대시보드 시각화  
+1. 사용자 참여도 분석(바차트, 라인차트)  
+-모바일 앱의 사용자 참여도를 분석해 주간활동 패턴, 월간 성장률 파악  
+지표를 모니터링해 이커머스 매출이 급증하거나 사용자가 급증하는 기간에 앱의 주요업데이트나 프로모션, 특별 이벤트 기획  
+2.기능 사용률 분석(히트맵)  
+-불필요한 기능 및 직관적이지 않은 기능 확인  
+서비스의 기능별 사용률을 확인하고 특정 기능을 자주 사용하지 않는다거나 자주 사용하는 부분에서 개선점을 파악하고 불필요한 서비스를 정리할 수 있고, 고객의 요구와 선호도 파악 가능  
+어떤 페이지에서 자주 이탈하는지 어떤 기능을 자주사용하는지를 파악해 니즈에 맞는 서비스 기획 가능   
+3. 사용자 유지율 분석(라인차트)  
+-이탈 포인트 파악 및 유지를 위한 전략 제시  
+신규 사용자가 앱 설치후 급격히 이탈하는 경향을 확인하거나 이런 트렌드를 발견해 어떻게 초기사용자들의 경험을 개선할 수 있는지 고민할 수 있음.  
+4. A/B test 분석  
+-데이터 기반 의사결정 지원 
+5. 이상 징후 감지  
+트래픽 감소나 오류율 증가를 조기에 감지  
+특정 시간대에 트래픽이 감소하거나 오류율이 급증하는 것을 확인하고 대응 가능  
+  
+마케터를 위한 대시보드 시각화  
+  
+A/B 테스트란 
+한 가지 변수(ex. 웹 사이트 디자인)을 A, B 두가지 버전으로 나눠서 테스트하며 어느 것이 더 효과적인지 판단하는 기법  
+ex. 쇼핑몰 배너 디자인 (클릭, 구매 전환 테스트)  
+
+1.목표 설정: 전환율이 높은 광고 배너를 찾는 것  
+2.가설 설정: “바로가기”라는 문구를 “지금 구매하기”로 변경하면 더 많은 사용자가 클릭을 할 것이다.  
+3.대상 군 분석  
+1. Control Campaign(A): 기존의 문구 사용(바로가기)  
+2. Test Campaign(B): 새로운 문구 사용(지금 구매하기)  
+  
+![필드 만들기](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/CTR%20%ED%95%84%EB%93%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0.PNG?raw=true)  
+![수식 만들기](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/ctr%20%EC%88%98%EC%8B%9D%20%EB%A7%8C%EB%93%A4%EA%B8%B0.PNG?raw=true)  
+-------------------------  
+![기간별 a안과 b안 추이 확인](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/ctr%20%EC%88%98%EC%8B%9D%20%EB%A7%8C%EB%93%A4%EA%B8%B0.PNG?raw=true)  
+![ctr 대시보드](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/CTR%20%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.PNG?raw=true)  
+  
+광고 배너 클릭전환 A/B Test  
+지표         A그룹 B그룹  
+노출         5000  5000  
+배너 클릭 수 250   350  
+전환 수(구매)130   150  
+  
+지표        A그룹 B그룹  
+노출        5000 5000  
+배너 클릭율 5.0% 7.0% #클릭수를 클릭률로 변환  
+전환율      2.6% 3.0% #전환 수를 전환율로 변환  
+  
+[A/B Test Calculator](https://abtestguide.com/calc/)로 검증  
+  
+![사이트](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/ab%20test%20site.PNG?raw=true)  
+검증 결과 significant test result에서 a안과 b안의 분포가 확연하게 다르다고 나옴  
+즉 b안에 있는 통계 전환율이 유의미하게 달랐다고 해석  
+  
+![사이트2](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/ab%20test%20site%20not%20good.PNG?raw=true)  
+전환율은 유의미하게 차이가 있다고 보이지 않음  
+  
+A/B Test 멈춤 조건  
+프로덕트를 배포하고 1주일간 데이터를 수집하여 A/B Test 결과를 분석했다가
+미세한 차이가 있긴 했으나, 실험 결과 “통계적으로 유의한 차이가 아니다”는 결론이 나와  
+계속 실험을 진행해야 할까?  미세한 차이가 있긴 하지만, 특정 안을 선택해도 괜찮을까? 를 고민하는 경우가 생길 것임  
+  
+A/B Test 적절한 주기 찾기  
+• 추가 실험 진행: 더 많은 데이터 수집 (9:1 => 5:5)  
+• 비즈니스 목표 및 전략 우선순위 고려 
+- a안과 b안이 통계적으로 유의미한 차이가 없다면 비즈니스 전반적으로 생각하는 브랜드 이미지나 프로덕트의 장기적인 성능을 고려해 자체선택  
+• A안과 B안의 운영 공수 및 비용 고려  
+- 비용이 적게 들고 유지 보수 관리가 더 쉬운 옵션 선택  
+• 사용자 경험(UX) 및 만족도 조사  
+- 질적(정성적) 조사 결과나 사용자 피드백 참고하여 결정  
+• 장기적인 전략과 Align  
+- 기존안은 A안이고 변경된 안은 B안인데 비즈니스의 장기적인 전략과 맞게 주로 새로운 안 (B안)을 채택  
+  
+이커머스 로지스틱스(물류) 대시보드 구성  
+#2024년 기준 전체적인 주문의 수량 확인하기  
+필터에 order date 2024년으로 지정한 뒤 order id의 측정값을 카운트(고유) 설정  
+#계산된 필드 만들기에서 avg_order per day 필드 추가하기  
+```
+/*sum으로 주문수량의 총합을 나타내고 
+countd로 주문날짜의 고유값(주문이 이루어진 총 날짜수 계산*/
+SUM([Quantity]) / COUNTD([Order Date])
+```  
+#배송에 얼마나 시간이 오래 걸리는지 측정하기  
+주문한 날짜 order date 기준 배송받은 날짜 ship date 까지 얼마나 걸렸는지 확인  
+
+#order by subcategory region 중간 산출물    
+![중간](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/order%20by%20sub%20category%20and%20region.PNG?raw=true)  
+#shipping time by subcategory 중간 산출물  
+![중간2](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/shipping%20time%20per%20subcategory.PNG?raw=true)  
+#quarterly orders by customer segment 중간 산출물  
+![중간3](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/querterly%20orders%20by%20customer%20segment.PNG?raw=true)  
+!order id를 넣을때 추가하고 있는 필드에 대해 n개의 멤버가 포함되어 있습니다. 이 선반에 대해 권장되는 값은 1000개입니다.  
+창이 뜰 경우 자동 업데이트를 해제한 다음 추가 선택  
+이후 최상단에서 워크시트>자동업데이트>워크시트 자동업데이트 선택  
+퀵테이블 계산에서 구성비율로 선택해 가시성을 높임 이 때 레이블 쪽도 똑같은 옵션 적용  
+이후 행에 있는 카운트 고유에서 계산 대상>테이블 아래로 선택해서 각 분기를 100퍼센트 기준으로 볼 수 있음  
+![대시보드](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/logistics%20dashboard.PNG?raw=true)  
+텍스트 워크시트를 넣기 위해 개체>가로 컨테이너로 구역을 잡아줌  
+각 텍스트별 제목숨기기 설정  
+레이아웃에서 백드라운드를 회색으로 처리해서 데이터가 잘 보이게 해줌  
+강조하고 싶은 값은 텍스트 색상과 배경을 다르게 강조  
+각 요소에 대해서 어떤 지표를 꾸준히 모니터링해갈 것인지 개선 포인트를 어떻게 잡고 있는지에 따라 구성이 달라질 수 있음  
+---  
+  
+참고 출처:  
+데이터 분석 3종 필수 스킬 python&SQL&Excel입문  
+CHAT GPT
+ 
