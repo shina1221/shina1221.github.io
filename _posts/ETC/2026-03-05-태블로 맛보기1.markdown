@@ -13,7 +13,7 @@ category: Statistics
 속성에서 월은 두가지가 있는데 월별 집계는 위쪽 월 시간별로 집계하고 있다면 아래에 있는 월은 연도와 월별 데이터를 나눠서 시간 순서대로 저장되어 있다는 차이가 있음  
 그래서 아래쪽 월을 선택하면 차원값을 보면 카테고리컬 값이었던 것이 수치형으로 변경됨을 확인할 수 있음   
   
-![태블로4](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/tableauC4.png?raw=true)  
+![태블로4](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/tableau4.png?raw=true)  
 대시보드를 만들었을 때 그래프가 한쪽에 치우쳐져 있을 경우 다음의 옵션을 통해 중앙에 배치한 뒤  
 대시보드에 띄워둔 차트를 지웠다 다시 넣으면 해결됨 
   
@@ -53,11 +53,11 @@ ex. 쇼핑몰 배너 디자인 (클릭, 구매 전환 테스트)
 1. Control Campaign(A): 기존의 문구 사용(바로가기)  
 2. Test Campaign(B): 새로운 문구 사용(지금 구매하기)  
     
-![필드 만들기](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/CTR fild making?raw=true)  
-![수식 만들기](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/ctr def making?raw=true)  
+![필드 만들기](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/CTR%20fild%20making.PNG?raw=true)  
+![수식 만들기](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/ctr%20def%20making.PNG?raw=true)  
 -------------------------  
-![기간별 a안과 b안 추이 확인](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/25~30check?raw=true)  
-![ctr 대시보드](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/CTR_dashboard_?raw=true)  
+![기간별 a안과 b안 추이 확인](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/25~30check.PNG?raw=true)  
+![ctr 대시보드](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/CTR_dashboard.PNG?raw=true)  
   
 광고 배너 클릭전환 A/B Test  
 지표         A그룹 B그룹  
