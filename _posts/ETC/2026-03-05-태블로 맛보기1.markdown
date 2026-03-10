@@ -9,15 +9,15 @@ category: Statistics
   
 열이나 행에 넣어지는 차원(컬럼)을 필이라고 부름  
 
-![태블로3](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/3%EC%A2%85%EC%8A%A4%ED%82%AC%20%ED%83%9C%EB%B8%94%EB%A1%9C3.png)
+![태블로3](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/tableau3.png?raw=true)
 속성에서 월은 두가지가 있는데 월별 집계는 위쪽 월 시간별로 집계하고 있다면 아래에 있는 월은 연도와 월별 데이터를 나눠서 시간 순서대로 저장되어 있다는 차이가 있음  
 그래서 아래쪽 월을 선택하면 차원값을 보면 카테고리컬 값이었던 것이 수치형으로 변경됨을 확인할 수 있음   
   
-![태블로4](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/3%EC%A2%85%EC%8A%A4%ED%82%AC%20%ED%83%9C%EB%B8%94%EB%A1%9C4.png)  
+![태블로4](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/tableauC4.png?raw=true)  
 대시보드를 만들었을 때 그래프가 한쪽에 치우쳐져 있을 경우 다음의 옵션을 통해 중앙에 배치한 뒤  
 대시보드에 띄워둔 차트를 지웠다 다시 넣으면 해결됨 
   
-![태블로5](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/3%EC%A2%85%EC%8A%A4%ED%82%AC%20%ED%83%9C%EB%B8%94%EB%A1%9C5.png)  
+![태블로5](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/tableau5.png?raw=true)  
   
 프로젝트 모니터링 시 고려해야하는 점  
 Key Perfirmance Index: 꾸준히 모니터링 하기 위함   
@@ -52,12 +52,12 @@ ex. 쇼핑몰 배너 디자인 (클릭, 구매 전환 테스트)
 3.대상 군 분석  
 1. Control Campaign(A): 기존의 문구 사용(바로가기)  
 2. Test Campaign(B): 새로운 문구 사용(지금 구매하기)  
-  
-![필드 만들기](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/CTR%20%ED%95%84%EB%93%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0.PNG?raw=true)  
-![수식 만들기](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/ctr%20%EC%88%98%EC%8B%9D%20%EB%A7%8C%EB%93%A4%EA%B8%B0.PNG?raw=true)  
+    
+![필드 만들기](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/CTR fild making?raw=true)  
+![수식 만들기](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/ctr def making?raw=true)  
 -------------------------  
-![기간별 a안과 b안 추이 확인](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/ctr%20%EC%88%98%EC%8B%9D%20%EB%A7%8C%EB%93%A4%EA%B8%B0.PNG?raw=true)  
-![ctr 대시보드](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/CTR%20%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.PNG?raw=true)  
+![기간별 a안과 b안 추이 확인](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/25~30check?raw=true)  
+![ctr 대시보드](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/CTR_dashboard_?raw=true)  
   
 광고 배너 클릭전환 A/B Test  
 지표         A그룹 B그룹  
