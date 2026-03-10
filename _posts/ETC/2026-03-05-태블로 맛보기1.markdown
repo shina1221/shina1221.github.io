@@ -73,8 +73,17 @@ ex. 쇼핑몰 배너 디자인 (클릭, 구매 전환 테스트)
 [A/B Test Calculator](https://abtestguide.com/calc/)로 검증  
   
 ![사이트](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/ab%20test%20site.PNG?raw=true)  
-검증 결과 significant test result에서 a안과 b안의 분포가 확연하게 다르다고 나옴  
+검증 결과 significant test result에서 a안과 b안의 분포가 겹치지 않고 확연하게 다르다고 나옴  
 즉 b안에 있는 통계 전환율이 유의미하게 달랐다고 해석  
+*상대적 상승률(relative uplift): b가 A보다 전환율이 40% 개선  
+*z-score: 표준화된 척도를 사용하여 각 데이터 값이 평균에서 얼마나 떨어져 있는지 측정하는 방법  
+1.96	95% 신뢰  
+2.58	99% 신뢰  
+4.21	매우 높은 유의성  (결과값)  
+  
+*검정력(Statistical Power): 귀무가설(연구자가 부정하고자 하는 가설)이 실제로 거짓일 때,  
+ 이를 올바르게 기각하고 대립가설을 채택할 확률(통계적 검정의 능력)   
+ 제2종 오류(거짓 음성)를 범하지 않을 확률을 의미하며, 높을수록 연구의 신뢰도가 높음  
   
 ![사이트2](https://github.com/shina1221/shina1221.github.io/blob/main/_posts/ETC/img/ab%20test%20site%20not%20good.PNG?raw=true)  
 전환율은 유의미하게 차이가 있다고 보이지 않음  
