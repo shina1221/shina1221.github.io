@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 태블로 맛보기1
+title: 태블로 맛보기1(물류)
 date: 2026-03-05 19:20:23 +0900
 category: Statistics
 ---
